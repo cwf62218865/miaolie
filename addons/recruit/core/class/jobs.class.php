@@ -18,6 +18,17 @@ class jobs{
         return $arr;
     }
 
+    //职位分页
+    public function getall_jobs_page($page=1){
+        $page = ($page -1)*4;
+        $limit = " limit ".$page.",4";
+        $jobs = pdo_fetchall("select * from ".tablename(WL."jobs")." order by open desc".$limit);
+//        foreach ($jobs as $list){
+//            $company = pdo_fetch("select * from ".tablename(WL."company_profile")." where uid=".$list['uid']);
+//            $list['com']
+//        }
+        return $jobs;
+    }
 
 public function search_jobs(){
 

@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/header.css" rel="stylesheet">
-    <link href="../css/swiper-3.4.2.min.css" rel="stylesheet">
-    <link href="../css/control.css" rel="stylesheet">
-    <link href="../css/reguser1.css" rel="stylesheet">
-    <link href="../css/personal.css" rel="stylesheet">
-    <link href="../css/personal1.css" rel="stylesheet">
-    <link href="../css/company_msg.css" rel="stylesheet">
-    <link href="../css/job_apply.css" rel="stylesheet">
+    <link href="{WL_URL_ARES}css/header.css" rel="stylesheet">
+    <link href="{WL_URL_ARES}css/swiper-3.4.2.min.css" rel="stylesheet">
+    <link href="{WL_URL_ARES}css/control.css" rel="stylesheet">
+    <link href="{WL_URL_ARES}css/reguser1.css" rel="stylesheet">
+    <link href="{WL_URL_ARES}css/personal.css" rel="stylesheet">
+    <link href="{WL_URL_ARES}css/personal1.css" rel="stylesheet">
+    <link href="{WL_URL_ARES}css/company_msg.css" rel="stylesheet">
+    <link href="{WL_URL_ARES}css/job_apply.css" rel="stylesheet">
     <script src="http://api.map.baidu.com/api?v=2.0&ak=YrLaqu3cNGX66NynxPIWR9sS7n5ASDd1"></script>
 
     <title>企业主页</title>
@@ -32,10 +32,10 @@
             background-color: #09c;
         }
         .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
-            background-image: url("../images/left.png");
+            background-image: url("{WL_URL_ARES}images/left.png");
         }
         .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
-            background-image: url("../images/next.png");
+            background-image: url("{WL_URL_ARES}images/next.png");
         }
         .swiper-button-next, .swiper-button-prev{
             width: 30px;
@@ -60,45 +60,25 @@
     </style>
 </head>
 <body bgcolor="#f4f4f4">
-<div class="header" style="background: #ffffff">
-    <div class="width1200 align_center" style="padding-top: 14px;justify-content: space-between">
-        <img src="../images/logo.png"/>
-        <div style="height: 52px;line-height: 52px"><span class="city">全国</span><span class="changecity">[切换]</span></div>
-        <div class="menu">
-            <a href="#" class="menuactive">首页</a>
-            <a  href="#">找工作</a>
-            <a  href="#">实习/兼职</a>
-            <a  href="#">求职保镖</a>
-            <a  href="#">职场信用</a>
-            <a  href="#">就业大数据</a>
-        </div>
-        <div class="login">
-            <a href="#">登陆</a>
-            <a href="#">注册</a>
-            <a href="#">企业入口</a>
-        </div>
-    </div>
-</div>
+{php include wl_template('common/header');}
 <div class="width1200 p1content">
 
     <!--公司基本信息-->
     <div id="basic_msg">
-        <span class="company_logo"><img src="../images/qiyelogo.png"></span>
+        <span class="company_logo"><img src="{php echo $company['headimgurl']}"></span>
         <div class="company_basacmsg">
             <div class="relative">
-                <span class="company_name">重庆大唐科技股份有限公司</span>
+                <span class="company_name">{php echo $company['companyname']}</span>
                 <span>秒猎认证</span>
                 <span>明星雇主</span>
             </div>
 
-            <div class="font666 company_introduce wrap" >提供最鲜活的城市资讯，记录最有温暖的城市生活我们所做的一切都</div>
+            <div class="font666 company_introduce wrap" >{php echo $company['introduce']}</div>
 
             <div class="font999" style="margin-top: 16px">
-                <span class="basic_msg_bq">年终奖</span>
-                <span class="basic_msg_bq">住房公积金</span>
-                <span class="basic_msg_bq">带薪年假</span>
-                <span class="basic_msg_bq">绩效奖金</span>
-                <span class="basic_msg_bq">内部培训</span>
+                {loop explode(',',$company['tag']) $list}
+                    <span class="basic_msg_bq">{$list}</span>
+                {/loop}
             </div>
             <div class="zpzhuangtai">
                 <div class="tjitem">
@@ -126,7 +106,7 @@
                    <!--上传logo-->
                    <div style="margin-top: 80px;width: 100%;text-align: center">
                    <span class="company_logo_upload">
-                       <!--<img src="../images/person_img.png">-->
+                       <!--<img src="{WL_URL_ARES}images/person_img.png">-->
                        <span>
                            <svg class="icon" aria-hidden="true">
                                <use  xlink:href="#icon-xiangji"></use>
@@ -142,7 +122,7 @@
                    <div class="person_changes" style="margin-top: 40px">
                        <div>
                            <span class="color666 companymsg_name">公司全称</span>
-                           <span style="line-height: 48px;margin-left: 20px">重庆大粪车科技公司</span>
+                           <span style="line-height: 48px;margin-left: 20px">{php echo $company['companyname']}</span>
                        <span class="relative change_company_name">
                            <span class="edit_company_name">修改公司名称</span>
                            <span class="edit_name_tips">
@@ -160,7 +140,7 @@
                                <span class="color666 redxing companymsg_name">公司性质</span>
                                <div class=" relative general-select " style="float: none">
                                    <label class="general-input relative general-select" style="float: none">
-                                       <input type="text" readonly=""  name="company_nature" value="民营">
+                                       <input type="text" readonly=""  name="company_nature" value="{php echo $company['nature']}">
                                        <svg class="icon inputicon" aria-hidden="true">
                                            <use  xlink:href="#icon-xiala" class="colorbbb"></use>
                                        </svg>
@@ -177,7 +157,7 @@
                                <span class="color666 redxing companymsg_name">公司规模</span>
                                <div class=" relative general-select " style="float: none">
                                    <label class="general-input relative general-select" style="float: none">
-                                       <input type="text" readonly=""  name="company_scale" value="50-200人">
+                                       <input type="text" readonly=""  name="company_scale" value="{php echo $company['number']}">
                                        <svg class="icon inputicon" aria-hidden="true">
                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xiala" class="colorbbb"></use>
                                        </svg>
@@ -199,7 +179,7 @@
                                <span class="color666 redxing companymsg_name">所处行业</span>
                                <div class=" relative general-select  " style="float: none">
                                    <label class="general-input relative general-select" style="float: none">
-                                       <input type="text" readonly=""  name="company_industry" value="互联网">
+                                       <input type="text" readonly=""  name="company_industry" value="{php echo $company['industry']}">
                                        <svg class="icon inputicon" aria-hidden="true">
                                            <use  xlink:href="#icon-xiala" class="colorbbb"></use>
                                        </svg>
@@ -229,7 +209,7 @@
                                <span class="color666 redxing companymsg_name">所在地区</span>
                                <div class=" relative general-select " style="float: none">
                                    <label class="general-input relative general-select" style="float: none">
-                                       <input type="text" readonly=""  name="company_area" value="重庆">
+                                       <input type="text" readonly=""  name="company_area" value="{php echo $company['city']}">
                                        <svg class="icon inputicon" aria-hidden="true">
                                            <use  xlink:href="#icon-xiala" class="colorbbb"></use>
                                        </svg>
@@ -248,7 +228,7 @@
                        <div class=" person_changes_left" style="margin-top: 20px">
                            <span class="color666  companymsg_name" style="width: 78px;margin-left: -10px">公司slogan</span>
                            <label class="general-input relative" style="width: 580px;">
-                               <input type="text" placeholder="请输入公司一句话广告语（30字以内）"  style="width: 540px;" name="slogan">
+                               <input type="text" placeholder="请输入公司一句话广告语（30字以内）"  style="width: 540px;" name="slogan" value="{php echo $company['slogan']}">
                            </label>
                        </div>
 
@@ -274,9 +254,7 @@
 
                     <div  id="introduces_msg">
                         <div class="introduces">
-                            猪八戒网作为中国领先的服务众包平台，自2006年成立以来，始终立足服务交易，致力让天下人享受诚信服务，助力中小微企业的成长与发展。
-                            服务涵盖平面设计、开发建站、营销推广、文案策划、动画视频、工业设计、建筑设计，八大主打类目，六百细分品类，为创业者提供一站式的企业全生命周期服务猪八戒网作为中国领先的服务众包平台，自2006年成立以来，始终立足服务交易，致力让天下人享受诚信服务，助力中小微企业的成长与发展。
-                            服务涵盖平面设计、开发建站、营销推广、文案策划、动画视频、工业设计、建筑设计，八大主打类目，六百细分品类，为创业者提供一站式的企业全生命周期服务…
+                            {php echo $company['introduce']}
                         </div>
                         <span class="showoehideall">
                             <span>显示全部</span>
@@ -293,12 +271,12 @@
                        <div class=" person_changes_left" style="margin-top: 40px">
                            <span class="color666  redxing companymsg_name">公司介绍</span>
                            <div class="cwfreg4content" style="display: inline-block;margin-left: 20px;height: 174px;border: 1px solid #f5f5f5;width: 580px;background-color: #f5f5f5">
-                               <textarea   class="cwftextarea" id="companymsg_introduce"  placeholder="请输入公司详细介绍"></textarea>
+                               <textarea   class="cwftextarea" id="companymsg_introduce"  placeholder="请输入公司详细介绍">{php echo $company['introduce']}</textarea>
                            </div>
 
                            <div  class="cwftextareatip" style="height: auto;margin-top: 10px;padding-bottom: 13px">
                                <label class="general-input relative" style="width: 260px;;margin-left: 88px;height: 0;border: none">
-                                   <input type="hidden" name="companymsg_introduce" id="companymsg_introduceinput" data-error="请输入公司详细介绍">
+                                   <input type="hidden" name="companymsg_introduce" id="companymsg_introduceinput" data-error="请输入公司详细介绍" value="{php echo $company['introduce']}">
                                </label>
                            </div>
 
@@ -324,16 +302,16 @@
                        <div class="swiper-container">
                            <div class="swiper-wrapper">
                                <div class="swiper-slide">
-                                    <div class="company_img"><img src="../images/person_img.png"></div>
+                                    <div class="company_img"><img src="{WL_URL_ARES}images/person_img.png"></div>
                                </div>
                                <div class="swiper-slide">
-                                   <div class="company_img"><img src="../images/person_img.png"></div>
+                                   <div class="company_img"><img src="{WL_URL_ARES}images/person_img.png"></div>
                                </div>
                                <div class="swiper-slide">
-                                   <div class="company_img"><img src="../images/person_img.png"></div>
+                                   <div class="company_img"><img src="{WL_URL_ARES}images/person_img.png"></div>
                                </div>
                                <div class="swiper-slide">
-                                   <div class="company_img"><img src="../images/person_img.png"></div>
+                                   <div class="company_img"><img src="{WL_URL_ARES}images/person_img.png"></div>
                                </div>
                            </div>
                            <div class="swiper-pagination" ></div>
@@ -353,7 +331,7 @@
                        <span class="color666  redxing companymsg_name">公司图集</span>
                        <div class="person_worksbox" style="margin-left: 88px">
                            <div class="person_worksbtn">
-                               <img src="../images/person_img.png">
+                               <img src="{WL_URL_ARES}images/person_img.png">
                                     <span class="person_worksdelbtn">
                                         <svg class="icon" aria-hidden="true">
                                             <use xlink:href="#icon-shanchu"></use>
@@ -362,7 +340,7 @@
                            </div>
 
                            <div class="person_worksbtn">
-                               <img src="../images/person_img.png">
+                               <img src="{WL_URL_ARES}images/person_img.png">
                                     <span class="person_worksdelbtn">
                                         <svg class="icon" aria-hidden="true">
                                             <use xlink:href="#icon-shanchu"></use>
@@ -406,8 +384,8 @@
                    <div  id="company_address">
                        <div id="allmap" style="width: 640px;height: 320px;margin-top: 40px;margin-left: 65px"></div>
                        <div style="margin-top: 20px;text-align: center">
-                           <span style="font-size: 16px;color: #333">重庆市渝北区</span>
-                           <span style="font-size: 14px;color: #666">金开大道西段106号 猪八戒总部大厦</span>
+                           <span style="font-size: 16px;color: #333">{php echo $company['city'].$company['city_area']}</span>
+                           <span style="font-size: 14px;color: #666">{php echo $company['address']}</span>
                        </div>
                    </div>
 
@@ -419,7 +397,7 @@
                            <span class="color666  redxing companymsg_name">详细地址</span>
                            <div class=" relative general-select " style="float: none">
                                <label class="general-input relative general-select" style="width: 140px;float: none">
-                                   <input type="text" readonly="" data-error="请选择现居住地址" name="city" value="" placeholder="省/市" style="width: 120px">
+                                   <input type="text" readonly="" data-error="请选择现居住地址" name="city" value="{php echo $company['city']}" placeholder="省/市" style="width: 120px">
                                    <svg class="icon inputicon" aria-hidden="true">
                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xiala" class="colorbbb"></use>
                                    </svg>
@@ -431,11 +409,11 @@
                                </div>
                            </div>
                            <label class="general-input relative" style="width: 256px;margin-left: 20px;float:right">
-                               <input type="text" name="address"   placeholder="详细地址（选填）">
+                               <input type="text" name="address"   placeholder="详细地址（选填）" value="{php echo $company['address']}">
                            </label>
                            <div class=" relative general-select " style="float: right">
                                <label class="general-input relative general-select" style="width: 140px;float: none">
-                                   <input type="text" readonly="" id="area" name="area" value="" placeholder="区/县" style="width: 120px">
+                                   <input type="text" readonly="" id="area" name="area" value="{php echo $company['city_area']}" placeholder="区/县" style="width: 120px">
                                    <svg class="icon inputicon" aria-hidden="true">
                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xiala" class="colorbbb"></use>
                                    </svg>
@@ -452,8 +430,8 @@
                            <div id="r-result" class="person_changes_left" style="margin-top: 20px">
                                <span class="color666  redxing companymsg_name">地图定位</span>
                                <label class="general-input relative" style="width: 256px;margin-left: 20px">
-                                   <input type="text" id="suggestId" style="width: 216px"  placeholder="请输入公司地址获取定位">
-                                   <input type="hidden" id="coordinate"  name="coordinate" data-error="请输入公司地址获取定位" >
+                                   <input type="text" id="suggestId" style="width: 216px"  placeholder="请输入公司地址获取定位" value="{php echo $company['retoate_x']}">
+                                   <input type="hidden" id="coordinate"  name="coordinate" data-error="请输入公司地址获取定位"  value="{php echo $company['retoate_x']}">
                                </label>
                            </div>
                            <div id="searchResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto; display:none;"></div>
@@ -480,10 +458,9 @@
                    </div>
 
                    <div class="welfare" id="welfare_msg">
-                       <span>年终奖</span>
-                       <span>五险一金</span>
-                       <span>绩效奖金</span>
-                       <span>年终奖</span>
+                       {loop explode(',',$company['tag']) $list}
+                       <span>{$list}</span>
+                       {/loop}
                    </div>
 
                </div>
@@ -541,7 +518,7 @@
                    </div>
 
                    <span class="website" id="website_msg">
-                       www.dafengche.com
+                       {php echo $company['website']}
                    </span>
 
                </div>
@@ -550,7 +527,7 @@
                <div class=" person_changes_left width670" id="website_msgbox" style="margin-top: 40px;display: none">
                    <span class="color666  companymsg_name" style="width: 78px;margin-left: -10px">公司网站</span>
                    <label class="general-input relative" style="width: 580px;">
-                       <input type="text" placeholder="请输入公司网址"  style="width: 540px;" name="company_url">
+                       <input type="text" placeholder="请输入公司网址"  style="width: 540px;" name="company_url" value="{php echo $company['website']}">
                    </label>
 
                    <div class="person_changes"  style="margin-top: 20px">
@@ -577,13 +554,13 @@
 
 
 </body>
-<script src="../js/jquery.js" rel="script"></script>
-<script src="../js/swiper.js" rel="script"></script>
-<script src="../js/iconfont.js" rel="script"></script>
-<script src="../js/area.js" rel="script"></script>
-<script src="../js/control.js" rel="script"></script>
-<script src="../js/formdata.js" rel="script"></script>
-<script src="../js/company_msg.js" rel="script"></script>
+<script src="{WL_URL_ARES}js/jquery.js" rel="script"></script>
+<script src="{WL_URL_ARES}js/swiper.js" rel="script"></script>
+<script src="{WL_URL_ARES}js/iconfont.js" rel="script"></script>
+<script src="{WL_URL_ARES}js/area.js" rel="script"></script>
+<script src="{WL_URL_ARES}js/control.js" rel="script"></script>
+<script src="{WL_URL_ARES}js/formdata.js" rel="script"></script>
+<script src="{WL_URL_ARES}js/company_msg.js" rel="script"></script>
 <script type="text/javascript">
     // 百度地图API功能
     var map = new BMap.Map("allmap");
