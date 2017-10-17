@@ -23,7 +23,7 @@
             <div class="msg_zj">
                     <div  class="img_tx">
                         {if $resume['headimgurl']}
-                        <span style="display: inline-block;position: absolute;left: 5px;top: 5px;width: 120px;height: 120px;border-radius: 60px;overflow: hidden">
+                        <span class="resume_reg1headimgbox">
                             <img src="{php echo $resume['headimgurl']}">
                         </span>
                         {else}
@@ -72,7 +72,7 @@
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xiala" class="colorbbb"></use>
                             </svg>
                         </label>
-                        <div class="options" style="height: 0px;top:250px">
+                        <div class="options" style="height: 0px">
 
                         </div>
                     </div>
@@ -163,30 +163,25 @@
                    var data=JSON.parse(data);
                    if(data.status==1){
                        //location = location;
-                       var html = ' <span style="display: inline-block;position: absolute;left: 5px;top: 5px;width: 120px;height: 120px;border-radius: 60px;overflow: hidden">'
-                               +'<img src="'+data.others+'">'+
-                               '</span>'+
-                               ' <div class="img_con">'
-                               +'<svg class="icon icon2" aria-hidden="true">'+
+                       var html = '<img src="'+data.others+'">'+
+                               ' <div class="img_con">'+
+                               '<svg class="icon icon2" aria-hidden="true">'+
                                '<use xlink:href="#icon-xiangji"></use>'+
                                '</svg></div>';
-                       $(".img_tx").html(html);
+                       $(".resume_reg1headimgbox").html(html);
 //                       $(".img_tx img").eq(0).attr("src",data.others);
                    }
                    $(".chec_tip1").eq(1).html("");
                }
            });
-           $("#modalbox").animate({"opacity":0},300);
-           setTimeout(function(){
-               $("#modalbox").css("display","none");
-           },300)
+       $("#modalbox").css("display","none");
        })
 
     $("#post_next").on("click",function(){
     var headimgurl=$(".img_tx img").eq(0).attr("src");//头像
-    var sex="1";//1男，0女
+    var sex="1";//1男，2女
     if($(".radio_sec").html()=="我是女生"){
-        var sex="0"
+        var sex="2"
     }else{
         var sex="1"
     }

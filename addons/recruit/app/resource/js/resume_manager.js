@@ -149,6 +149,23 @@ for(var i=0;i<area.length;i++){
     city+="<div class='select-option' style='width:140px;' data-id='"+i+"'><span>"+area[i]+"</span></div>"
 };
 $('.cityoptions').append(city);
+    var addresscity=$("input[name=city]").eq(0).val();
+    if(addresscity){
+        for(var i in dsy.Items['0']){
+            if(dsy.Items['0'][i]==addresscity){
+                if(i<4){
+                    var areacq=dsy.Items['0_'+i+"_0"];
+                }else if(i>=4){
+                    var areacq=dsy.Items['0_'+i];
+                }
+            }
+        }
+        var areas="";
+        for(var i=0;i<areacq.length;i++){
+            areas+="<div class='select-option' style='width:180px;'><span>"+areacq[i]+"</span></div>"
+        }
+        $(".areaoptions").html(areas);
+    }
 
 $("body").on("mousedown",".cityoptions .select-option",function(){
     var _this=$(this);
@@ -198,7 +215,12 @@ $(".cwftextarea").eq(0).on("input",function(){
         $("#introduce").val(content);
     }
 
-})
+});
+var starttextarea=$(".cwftextarea").eq(0).val();
+if(starttextarea){
+    $("#textareanum").html(60-starttextarea.length);
+}
+
 
 //文本提示修改
 $(".cwftextarea").on("focus",function(){
@@ -298,7 +320,7 @@ $("#addpersonworks").on("click",function(){
 
 
 //    删除个人作品
-$(".person_worksdelbtn").on("click",function(){
+$("body").on("click",".person_worksdelbtn",function(){
     var _this=$(this);
     var images="";
     _this.closest(".person_worksbtn").remove();

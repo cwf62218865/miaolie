@@ -21,12 +21,25 @@ for(var i=0;i<area.length;i++){
 }
 $(".city1 .options").html(html);
 
-var areacq=dsy.Items['0_3_0'];
-var htmlcq="";
-for(var i=0;i<areacq.length;i++){
-    htmlcq+="<div class='select-option district_con'><span>"+areacq[i]+"</span></div>";
+var city=$("#city").val();
+if(city){
+    for(var i in dsy.Items['0']){
+        if(dsy.Items['0'][i]==city){
+            if(i<4){
+                var areacq=dsy.Items['0_'+i+"_0"];
+            }else if(i>=4){
+                var areacq=dsy.Items['0_'+i];
+            }
+        }
+    }
+
+    var htmlcq="";
+    for(var i=0;i<areacq.length;i++){
+        htmlcq+="<div class='select-option district_con'><span>"+areacq[i]+"</span></div>";
+    }
+    $(".district1 .options").html(htmlcq);
 }
-$(".district1 .options").html(htmlcq);
+
 
 
 $("body").on("mousedown",".city_con",function(){
@@ -51,13 +64,17 @@ $("body").on("mousedown",".city_con",function(){
     $(".district1 .options").html(html1);
     $(".district1 input").val(area1[0]);
 
-    $("body").on("mousedown",".district_con",function() {
-        var _this = $(this);
-        var optionhtml = _this.find("span").eq(0).html();
-        _this.closest(".options").prev().find("input").val(optionhtml);
-        _this.closest(".options").css("height","0");
-    });
+
+
 });
+$("body").on("mousedown",".district_con",function() {
+
+    var _this = $(this);
+    var optionhtml = _this.find("span").eq(0).html();
+    _this.closest(".options").prev().find("input").val(optionhtml);
+    _this.closest(".options").css("height","0");
+});
+
 $(".msg_zj .radio_box").click(function () {
     $(".msg_zj .radio_box").removeClass("radio_sec");
     $(this).addClass("radio_sec");
@@ -66,16 +83,11 @@ $(".msg_zj .radio_box").click(function () {
 
 $(".img_con").click(function () {
     $(".title_content").html("上传头像");
-    $("#modalbox").animate({"opacity":1},300);
-    setTimeout(function(){
-        $("#modalbox").css("display","block");
-    },0)
+    $("#modalbox").css("display","block");
+
 });
 
 $(".modalclose").on("click",function(){
-    $("#modalbox").animate({"opacity":0},300);
-    setTimeout(function(){
-        $("#modalbox").css("display","none");
-    },300)
+    $("#modalbox").css("display","none");
 });
 
