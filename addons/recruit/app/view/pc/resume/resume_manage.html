@@ -11,7 +11,7 @@
     <link href="{WL_URL_ARES}css/personal.css" rel="stylesheet">
     <link href="{WL_URL_ARES}css/personal1.css" rel="stylesheet">
     <!--<script src="http://html5media.googlecode.com/svn/trunk/src/html5media.min.js"></script>-->
-    <title>投递简历</title>
+    <title>简历管理</title>
     <style>
         .abnormal .formtip{
             position: absolute;
@@ -79,7 +79,7 @@
             <!--头像-->
             <div class="resume_header">
                 <div class="resume_manage_header">
-                    <span style="display: inline-block;position: absolute;left: 5px;top: 5px;width: 120px;height: 120px;border-radius: 60px;overflow: hidden"><img  src="{if $resume['headimgurl']}{php echo $resume['headimgurl']}{else}{WL_URL_ARES}images/resume_head.png{/if}">
+                    <span class="resume_manage_headerimg"><img  src="{if $resume['headimgurl']}{php echo $resume['headimgurl']}{else}{WL_URL_ARES}images/resume_head.png{/if}">
                     </span>
                     <div class="img_con">
                         <svg class="icon" aria-hidden="true">
@@ -1433,7 +1433,10 @@
 
     //教育经历
     $.fromdata("#edutionbox","{php echo app_url('person/resume/save_edu_exp')}","#save_edu_exp_msg",function(data){
-        //do something
+        var data = JSON.parse(data);
+        if(data.status==1){
+            location = location;
+        }
     })
 
 
@@ -1446,7 +1449,7 @@
         $("#edutionbox label").css("border-color","#f5f5f5");
         $(".formtip").remove();
 
-        $("#edutionexp .delbtn").show();
+        $("#edutionbox .delbtn").show();
         var data_id=$(this).attr("data-id");
         $("#edutionbox .delbtn").attr("data-id",data_id);
         $("#edu_id").val(data_id);
@@ -1516,7 +1519,7 @@
             },
             success:function(data){
                 var data=JSON.parse(data);
-//                console.log(data);return;
+                console.log(data);return;
                 $("#person_worksbox input[name=works_url]").val(data.person_works);
                 $("#person_worksbox input[name=person_workmsg]").val(data.person_workmsg);
                 var imagebox="";
@@ -1571,7 +1574,10 @@
 
     //荣誉证书
     $.fromdata("#certificatebox","{php echo save_certificate}","#save_certificate_msg",function(data){
-        //do something
+        var data = JSON.parse(data);
+        if(data.status==1){
+            location = location;
+        }
     })
 
     //修改荣誉证书
