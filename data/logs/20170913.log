@@ -1,0 +1,24 @@
+2017-09-13 18:03:43 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_Array` SET ims_resume<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 407; <br />file: /framework/class/db.class.php; line: 90; <br />file: /framework/class/db.class.php; line: 253; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/admin/controller/resume/resume_reg.ctrl.php; line: 12; <br />file: /addons/recruit/admin/index.php; line: 36; <br />file: /addons/recruit/site.php; line: 38; <br />file: /admin/source/site/entry.ctrl.php; line: 80; <br />file: /admin/source/site/entry.ctrl.php; line: 80; <br />file: /admin/index.php; line: 203; <br />
+
+2017-09-13 18:03:52 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_Array` SET ims_resume<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 407; <br />file: /framework/class/db.class.php; line: 90; <br />file: /framework/class/db.class.php; line: 253; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/admin/controller/resume/resume_reg.ctrl.php; line: 12; <br />file: /addons/recruit/admin/index.php; line: 36; <br />file: /addons/recruit/site.php; line: 38; <br />file: /admin/source/site/entry.ctrl.php; line: 80; <br />file: /admin/source/site/entry.ctrl.php; line: 80; <br />file: /admin/index.php; line: 203; <br />
+
+2017-09-13 18:07:03 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_` SET <hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 407; <br />file: /framework/class/db.class.php; line: 90; <br />file: /framework/class/db.class.php; line: 253; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/core/function/global.func.php; line: 128; <br />file: /addons/recruit/admin/controller/resume/resume_reg.ctrl.php; line: 12; <br />file: /addons/recruit/admin/index.php; line: 36; <br />file: /addons/recruit/site.php; line: 38; <br />file: /admin/source/site/entry.ctrl.php; line: 80; <br />file: /admin/source/site/entry.ctrl.php; line: 80; <br />file: /admin/index.php; line: 203; <br />
+
+2017-09-13 18:22:10 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_resume` SET <hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 407; <br />file: /framework/class/db.class.php; line: 90; <br />file: /framework/class/db.class.php; line: 253; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/core/function/global.func.php; line: 128; <br />file: /addons/recruit/admin/controller/resume/resume_reg.ctrl.php; line: 12; <br />file: /addons/recruit/admin/index.php; line: 36; <br />file: /addons/recruit/site.php; line: 38; <br />file: /admin/source/site/entry.ctrl.php; line: 80; <br />file: /admin/source/site/entry.ctrl.php; line: 80; <br />file: /admin/index.php; line: 203; <br />
+

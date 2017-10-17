@@ -1,0 +1,6 @@
+2017-09-18 16:48:05 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_resume` SET data<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 407; <br />file: /framework/class/db.class.php; line: 90; <br />file: /framework/class/db.class.php; line: 253; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/web/controller/resume/resume_reg.ctrl.php; line: 32; <br />file: /addons/recruit/web/index.php; line: 59; <br />file: /addons/recruit/site.php; line: 39; <br />file: /web/source/site/entry.ctrl.php; line: 80; <br />file: /web/source/site/entry.ctrl.php; line: 80; <br />file: /web/index.php; line: 205; <br />
+

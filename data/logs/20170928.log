@@ -1,0 +1,207 @@
+2017-09-28 08:56:38 SQL Error :
+------------
+String:
+SQL: <br/>SELECT COUNT(*) FROM `ims_recruit_members`  WHERE 1 and uniacid = 1 <hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Unknown column 'uniacid' in 'where clause'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 135; <br />file: /framework/function/pdo.func.php; line: 36; <br />file: /addons/recruit/core/function/pdo.func.php; line: 43; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 37; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 39; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/index.php; line: 184; <br />
+
+2017-09-28 08:56:38 SQL Error :
+------------
+String:
+SQL: <br/>SELECT * FROM `ims_recruit_members`  WHERE 1 and uniacid = 1  ORDER BY `id` DESC  LIMIT 0,15<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Unknown column 'uniacid' in 'where clause'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 189; <br />file: /framework/function/pdo.func.php; line: 44; <br />file: /addons/recruit/core/function/pdo.func.php; line: 47; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 37; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 39; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/index.php; line: 184; <br />
+
+2017-09-28 08:56:39 SQL Error :
+------------
+String:
+SQL: <br/>SELECT COUNT(*) FROM `ims_recruit_members`  WHERE 1 and uniacid = 1 <hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Unknown column 'uniacid' in 'where clause'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 135; <br />file: /framework/function/pdo.func.php; line: 36; <br />file: /addons/recruit/core/function/pdo.func.php; line: 43; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 37; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 39; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/index.php; line: 184; <br />
+
+2017-09-28 08:56:39 SQL Error :
+------------
+String:
+SQL: <br/>SELECT * FROM `ims_recruit_members`  WHERE 1 and uniacid = 1  ORDER BY `id` DESC  LIMIT 0,15<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Unknown column 'uniacid' in 'where clause'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 189; <br />file: /framework/function/pdo.func.php; line: 44; <br />file: /addons/recruit/core/function/pdo.func.php; line: 47; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 37; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 39; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/index.php; line: 184; <br />
+
+2017-09-28 08:56:39 SQL Error :
+------------
+String:
+SQL: <br/>SELECT COUNT(*) FROM `ims_recruit_members`  WHERE 1 and uniacid = 1 <hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Unknown column 'uniacid' in 'where clause'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 135; <br />file: /framework/function/pdo.func.php; line: 36; <br />file: /addons/recruit/core/function/pdo.func.php; line: 43; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 37; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 39; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/index.php; line: 184; <br />
+
+2017-09-28 08:56:39 SQL Error :
+------------
+String:
+SQL: <br/>SELECT * FROM `ims_recruit_members`  WHERE 1 and uniacid = 1  ORDER BY `id` DESC  LIMIT 0,15<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Unknown column 'uniacid' in 'where clause'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 189; <br />file: /framework/function/pdo.func.php; line: 44; <br />file: /addons/recruit/core/function/pdo.func.php; line: 47; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 37; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 39; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/index.php; line: 184; <br />
+
+2017-09-28 08:56:40 SQL Error :
+------------
+String:
+SQL: <br/>SELECT COUNT(*) FROM `ims_recruit_members`  WHERE 1 and uniacid = 1 <hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Unknown column 'uniacid' in 'where clause'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 135; <br />file: /framework/function/pdo.func.php; line: 36; <br />file: /addons/recruit/core/function/pdo.func.php; line: 43; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 37; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 39; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/index.php; line: 184; <br />
+
+2017-09-28 08:56:40 SQL Error :
+------------
+String:
+SQL: <br/>SELECT * FROM `ims_recruit_members`  WHERE 1 and uniacid = 1  ORDER BY `id` DESC  LIMIT 0,15<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Unknown column 'uniacid' in 'where clause'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 189; <br />file: /framework/function/pdo.func.php; line: 44; <br />file: /addons/recruit/core/function/pdo.func.php; line: 47; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 37; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 39; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/index.php; line: 184; <br />
+
+2017-09-28 10:18:31 SQL Error :
+------------
+String:
+SQL: <br/>show columns from `ims_Array`<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Table 'college.ims_array' doesn't exist<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 189; <br />file: /framework/function/pdo.func.php; line: 44; <br />file: /addons/recruit/core/function/global.func.php; line: 118; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 84; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 39; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/index.php; line: 184; <br />
+
+2017-09-28 10:18:31 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_Array` SET <hr/>Params: <br/>NULL<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 99; <br />file: /framework/class/db.class.php; line: 302; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/core/function/global.func.php; line: 132; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 84; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 39; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/index.php; line: 184; <br />
+
+2017-09-28 10:19:22 SQL Error :
+------------
+String:
+SQL: <br/>show columns from `ims_Array`<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Table 'college.ims_array' doesn't exist<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 189; <br />file: /framework/function/pdo.func.php; line: 44; <br />file: /addons/recruit/core/function/global.func.php; line: 118; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 84; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 39; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/index.php; line: 184; <br />
+
+2017-09-28 10:19:22 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_Array` SET <hr/>Params: <br/>NULL<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 99; <br />file: /framework/class/db.class.php; line: 302; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/core/function/global.func.php; line: 132; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 84; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 39; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/index.php; line: 184; <br />
+
+2017-09-28 10:20:26 SQL Error :
+------------
+String:
+SQL: <br/>show columns from `ims_Array`<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Table 'college.ims_array' doesn't exist<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 189; <br />file: /framework/function/pdo.func.php; line: 44; <br />file: /addons/recruit/core/function/global.func.php; line: 118; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 84; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 39; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/index.php; line: 184; <br />
+
+2017-09-28 10:20:26 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_Array` SET <hr/>Params: <br/>NULL<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 99; <br />file: /framework/class/db.class.php; line: 302; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/core/function/global.func.php; line: 132; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 84; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 39; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/index.php; line: 184; <br />
+
+2017-09-28 11:50:02 SQL Error :
+------------
+String:
+SQL: <br/>UPDATE `ims_recruit_resume` SET `sex` =  :sex , `user_name` =  :user_name , `work_status` =  :work_status , `birthday` =  :birthday , `nation` =  :nation , `origin_place` =  :origin_place , `political_status` =  :political_status , `telphone` =  :telphone , `email` =  :email , `city` =  :city , `address` =  :address , `city_area` =  :city_area , `introduce` =  :introduce WHERE `uid` =  :__uid<hr/>Params: <br/>array (
+  ':sex' => '男生',
+  ':user_name' => '包崇林',
+  ':work_status' => '找工作中',
+  ':birthday' => '2016',
+  ':nation' => '汉族',
+  ':origin_place' => '西城区',
+  ':political_status' => '团员',
+  ':telphone' => '13108922898',
+  ':email' => '1421514791@qq.com',
+  ':city' => '重庆市',
+  ':address' => '解放碑',
+  ':city_area' => '渝中区',
+  ':introduce' => '12333333333333',
+  ':__uid' => '658',
+)<hr/>SQL Error: <br/>Unknown column 'user_name' in 'field list'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 295; <br />file: /framework/function/pdo.func.php; line: 66; <br />file: /addons/recruit/app/controller/person/resume.ctrl.php; line: 48; <br />file: /addons/recruit/app/index.php; line: 59; <br />file: /addons/recruit/site.php; line: 39; <br />file: /app/source/site/entry.ctrl.php; line: 79; <br />file: /app/source/site/entry.ctrl.php; line: 79; <br />file: /app/index.php; line: 117; <br />
+
+2017-09-28 11:51:19 SQL Error :
+------------
+String:
+SQL: <br/>UPDATE `ims_recruit_resume` SET `sex` =  :sex , `user_name` =  :user_name , `work_status` =  :work_status , `birthday` =  :birthday , `nation` =  :nation , `origin_place` =  :origin_place , `political_status` =  :political_status , `telphone` =  :telphone , `email` =  :email , `city` =  :city , `address` =  :address , `city_area` =  :city_area , `introduce` =  :introduce WHERE `uid` =  :__uid<hr/>Params: <br/>array (
+  ':sex' => '男生',
+  ':user_name' => '包崇林',
+  ':work_status' => '找工作中',
+  ':birthday' => '2016',
+  ':nation' => '汉族',
+  ':origin_place' => '西城区',
+  ':political_status' => '团员',
+  ':telphone' => '15023726868',
+  ':email' => '1421514791@qq.com',
+  ':city' => '重庆市',
+  ':address' => '解放碑',
+  ':city_area' => '渝中区',
+  ':introduce' => '12333333333333',
+  ':__uid' => '658',
+)<hr/>SQL Error: <br/>Unknown column 'user_name' in 'field list'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 295; <br />file: /framework/function/pdo.func.php; line: 66; <br />file: /addons/recruit/app/controller/person/resume.ctrl.php; line: 48; <br />file: /addons/recruit/app/index.php; line: 59; <br />file: /addons/recruit/site.php; line: 39; <br />file: /app/source/site/entry.ctrl.php; line: 79; <br />file: /app/source/site/entry.ctrl.php; line: 79; <br />file: /app/index.php; line: 117; <br />
+
+2017-09-28 11:52:12 SQL Error :
+------------
+String:
+SQL: <br/>UPDATE `ims_recruit_resume` SET `sex` =  :sex , `user_name` =  :user_name , `work_status` =  :work_status , `birthday` =  :birthday , `nation` =  :nation , `origin_place` =  :origin_place , `political_status` =  :political_status , `telphone` =  :telphone , `email` =  :email , `city` =  :city , `address` =  :address , `city_area` =  :city_area , `introduce` =  :introduce WHERE `uid` =  :__uid<hr/>Params: <br/>array (
+  ':sex' => '男生',
+  ':user_name' => '包崇林',
+  ':work_status' => '找工作中',
+  ':birthday' => '2016',
+  ':nation' => '汉族',
+  ':origin_place' => '西城区',
+  ':political_status' => '团员',
+  ':telphone' => '15023726868',
+  ':email' => '1421514791@qq.com',
+  ':city' => '重庆市',
+  ':address' => '解放碑',
+  ':city_area' => '渝中区',
+  ':introduce' => '12333333333333',
+  ':__uid' => '658',
+)<hr/>SQL Error: <br/>Unknown column 'user_name' in 'field list'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 295; <br />file: /framework/function/pdo.func.php; line: 66; <br />file: /addons/recruit/app/controller/person/resume.ctrl.php; line: 48; <br />file: /addons/recruit/app/index.php; line: 59; <br />file: /addons/recruit/site.php; line: 39; <br />file: /app/source/site/entry.ctrl.php; line: 79; <br />file: /app/source/site/entry.ctrl.php; line: 79; <br />file: /app/index.php; line: 117; <br />
+
+2017-09-28 11:52:34 SQL Error :
+------------
+String:
+SQL: <br/>UPDATE `ims_recruit_resume` SET `sex` =  :sex , `user_name` =  :user_name , `work_status` =  :work_status , `birthday` =  :birthday , `nation` =  :nation , `origin_place` =  :origin_place , `political_status` =  :political_status , `telphone` =  :telphone , `email` =  :email , `city` =  :city , `address` =  :address , `city_area` =  :city_area , `introduce` =  :introduce WHERE `uid` =  :__uid<hr/>Params: <br/>array (
+  ':sex' => '男生',
+  ':user_name' => '包崇林',
+  ':work_status' => '找工作中',
+  ':birthday' => '2016',
+  ':nation' => '汉族',
+  ':origin_place' => '西城区',
+  ':political_status' => '团员',
+  ':telphone' => '15023726868',
+  ':email' => '1421514791@qq.com',
+  ':city' => '重庆市',
+  ':address' => '解放碑',
+  ':city_area' => '渝中区',
+  ':introduce' => '12333333333333',
+  ':__uid' => '658',
+)<hr/>SQL Error: <br/>Unknown column 'user_name' in 'field list'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 295; <br />file: /framework/function/pdo.func.php; line: 66; <br />file: /addons/recruit/app/controller/person/resume.ctrl.php; line: 48; <br />file: /addons/recruit/app/index.php; line: 59; <br />file: /addons/recruit/site.php; line: 39; <br />file: /app/source/site/entry.ctrl.php; line: 79; <br />file: /app/source/site/entry.ctrl.php; line: 79; <br />file: /app/index.php; line: 117; <br />
+
+2017-09-28 16:16:53 SQL Error :
+------------
+String:
+SQL: <br/>UPDATE `ims_recruit_resume` SET `work_experience` IN (:work_experience_0,:work_experience_1,:work_experience_2) WHERE `uid` =  :__uid<hr/>Params: <br/>array (
+  ':work_experience_0' => 
+  array (
+    'company_name' => '导师123',
+    'job_name' => '按时',
+    'job_starttime' => '2014年5月',
+    'job_endtime' => '2015年1月',
+    'leave_reason' => '按时',
+    'job_content' => '中心撒地方123',
+  ),
+  ':work_experience_1' => 
+  array (
+    'company_name' => 'php则请问',
+    'job_name' => '阿萨德详情',
+    'job_starttime' => '2015年4月',
+    'job_endtime' => '2016年6月',
+    'leave_reason' => '阿萨德去',
+    'job_content' => '爱上地产',
+  ),
+  ':work_experience_2' => 
+  array (
+    'company_name' => '爱仕达无',
+    'job_name' => '阿萨德',
+    'job_starttime' => '2016年2月',
+    'job_endtime' => '2017年6月',
+    'leave_reason' => '啊啊啊啊啊',
+    'job_content' => '安装上下车',
+  ),
+  ':__uid' => '658',
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IN ('Array','Array','Array') WHERE `uid` =  '658'' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 295; <br />file: /framework/function/pdo.func.php; line: 66; <br />file: /addons/recruit/app/controller/person/resume.ctrl.php; line: 113; <br />file: /addons/recruit/app/index.php; line: 59; <br />file: /addons/recruit/site.php; line: 39; <br />file: /app/source/site/entry.ctrl.php; line: 79; <br />file: /app/source/site/entry.ctrl.php; line: 79; <br />file: /app/index.php; line: 117; <br />
+
+2017-09-28 17:50:50 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 116; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 39; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/index.php; line: 184; <br />
+
+2017-09-28 17:50:51 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 116; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 39; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/source/site/entry.ctrl.php; line: 81; <br />file: /web/index.php; line: 184; <br />
+

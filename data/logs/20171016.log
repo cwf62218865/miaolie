@@ -1,0 +1,17 @@
+2017-10-16 09:26:11 SQL Error :
+------------
+String:
+SQL: <br/>UPDATE `ims_recruit_recruit` SET `introduce` =  :introduce WHERE `uid` =  :__uid<hr/>Params: <br/>array (
+  ':introduce' => '1111111111111111111111111111111111111111111111111111111',
+  ':__uid' => '663',
+)<hr/>SQL Error: <br/>Table 'college.ims_recruit_recruit' doesn't exist<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 295; <br />file: /framework/function/pdo.func.php; line: 66; <br />file: /addons/recruit/app/controller/company/company_profile.ctrl.php; line: 44; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-16 11:20:13 SQL Error :
+------------
+String:
+SQL: <br/>UPDATE `ims_recruit_resume` SET `personal_video` =  :personal_video , `updatetime` =  :updatetime WHERE `uid` =  :__uid<hr/>Params: <br/>array (
+  ':personal_video' => '/addons/recruit/app/resource/file/2017-10-16/1508124013662.mp4',
+  ':updatetime' => 1508124013,
+  ':__uid' => '662',
+)<hr/>SQL Error: <br/>Unknown column 'personal_video' in 'field list'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 295; <br />file: /framework/function/pdo.func.php; line: 66; <br />file: /addons/recruit/app/controller/person/resume.ctrl.php; line: 358; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+

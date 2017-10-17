@@ -1,0 +1,75 @@
+2017-10-13 10:22:40 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_recruit_members` SET `utype` =  :utype , `username` =  :username , `mobile` =  :mobile , `email` =  :email , `password` =  :password , `salt` =  :salt<hr/>Params: <br/>array (
+  ':utype' => '1',
+  ':username' => '15023726666',
+  ':mobile' => true,
+  ':email' => '1421514791@qq.com',
+  ':password' => 'b6e41a2fb5e21fb291e948ab55dacb10',
+  ':salt' => 858,
+)<hr/>SQL Error: <br/>Duplicate entry '1' for key 'mobile_2'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 302; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/core/function/global.func.php; line: 203; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 88; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 40; <br />file: /web/source/site/entry.ctrl.php; line: 82; <br />file: /web/source/site/entry.ctrl.php; line: 82; <br />file: /web/index.php; line: 186; <br />
+
+2017-10-13 10:25:21 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_recruit_members` SET `utype` =  :utype , `username` =  :username , `mobile` =  :mobile , `email` =  :email , `password` =  :password , `salt` =  :salt<hr/>Params: <br/>array (
+  ':utype' => '1',
+  ':username' => '15023726666',
+  ':mobile' => true,
+  ':email' => '1421514791@qq.com',
+  ':password' => '9ce43ba0a523d19cd1dfb88e6bc7f131',
+  ':salt' => 725,
+)<hr/>SQL Error: <br/>Duplicate entry '1' for key 'mobile_2'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 302; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/core/function/global.func.php; line: 203; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 89; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 40; <br />file: /web/source/site/entry.ctrl.php; line: 82; <br />file: /web/source/site/entry.ctrl.php; line: 82; <br />file: /web/index.php; line: 186; <br />
+
+2017-10-13 10:28:33 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_recruit_members` SET `utype` =  :utype , `username` =  :username , `mobile` =  :mobile , `email` =  :email , `password` =  :password , `salt` =  :salt<hr/>Params: <br/>array (
+  ':utype' => '1',
+  ':username' => '15023726666',
+  ':mobile' => true,
+  ':email' => '1421514791@qq.com',
+  ':password' => 'e1b355f0d473ff56504eb1f810e140da',
+  ':salt' => 108,
+)<hr/>SQL Error: <br/>Duplicate entry '1' for key 'mobile_2'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 302; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/core/function/global.func.php; line: 203; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 89; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 40; <br />file: /web/source/site/entry.ctrl.php; line: 82; <br />file: /web/source/site/entry.ctrl.php; line: 82; <br />file: /web/index.php; line: 186; <br />
+
+2017-10-13 10:29:52 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_recruit_members` SET `utype` =  :utype , `username` =  :username , `mobile` =  :mobile , `email` =  :email , `password` =  :password , `salt` =  :salt , `createtime` =  :createtime<hr/>Params: <br/>array (
+  ':utype' => '1',
+  ':username' => '15023726666',
+  ':mobile' => true,
+  ':email' => '1421514791@qq.com',
+  ':password' => 'e96851e5e3cf8ad8155352416e560ce9',
+  ':salt' => 580,
+  ':createtime' => 1507861792,
+)<hr/>SQL Error: <br/>Duplicate entry '1' for key 'mobile_2'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 302; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/core/function/global.func.php; line: 203; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 90; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 40; <br />file: /web/source/site/entry.ctrl.php; line: 82; <br />file: /web/source/site/entry.ctrl.php; line: 82; <br />file: /web/index.php; line: 186; <br />
+
+2017-10-13 10:29:57 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_recruit_members` SET `utype` =  :utype , `username` =  :username , `mobile` =  :mobile , `email` =  :email , `password` =  :password , `salt` =  :salt , `createtime` =  :createtime<hr/>Params: <br/>array (
+  ':utype' => '1',
+  ':username' => '15023726666',
+  ':mobile' => true,
+  ':email' => '1421514791@qq.com',
+  ':password' => 'cd676bd2c8b82284da34db0aaf52bbeb',
+  ':salt' => 144,
+  ':createtime' => 1507861797,
+)<hr/>SQL Error: <br/>Duplicate entry '1' for key 'mobile_2'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 302; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/core/function/global.func.php; line: 203; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 90; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 40; <br />file: /web/source/site/entry.ctrl.php; line: 82; <br />file: /web/source/site/entry.ctrl.php; line: 82; <br />file: /web/index.php; line: 186; <br />
+
+2017-10-13 10:30:54 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_recruit_members` SET `utype` =  :utype , `username` =  :username , `mobile` =  :mobile , `email` =  :email , `password` =  :password , `salt` =  :salt , `createtime` =  :createtime<hr/>Params: <br/>array (
+  ':utype' => '1',
+  ':username' => '15023726666',
+  ':mobile' => true,
+  ':email' => '1421514791@qq.com',
+  ':password' => '96f862d57507e3babd2a4093adc404e1',
+  ':salt' => 967,
+  ':createtime' => 1507861854,
+)<hr/>SQL Error: <br/>Duplicate entry '1' for key 'mobile_2'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 302; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/web/controller/member/member.ctrl.php; line: 90; <br />file: /addons/recruit/web/index.php; line: 37; <br />file: /addons/recruit/site.php; line: 40; <br />file: /web/source/site/entry.ctrl.php; line: 82; <br />file: /web/source/site/entry.ctrl.php; line: 82; <br />file: /web/index.php; line: 186; <br />
+

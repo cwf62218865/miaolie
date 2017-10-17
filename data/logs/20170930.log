@@ -1,0 +1,77 @@
+2017-09-30 09:20:44 SQL Error :
+------------
+String:
+SQL: <br/>UPDATE `ims_recruit_resume` SET `person_works` =  :person_works WHERE `uid` =  :__uid<hr/>Params: <br/>array (
+  ':person_works' => 'a:1:{i:1;s:62:"/addons/recruit/app/resource/file/2017-09-30/1506732081658.jpg";}',
+  ':__uid' => '658',
+)<hr/>SQL Error: <br/>Unknown column 'person_works' in 'field list'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 295; <br />file: /framework/function/pdo.func.php; line: 66; <br />file: /addons/recruit/app/controller/person/resume.ctrl.php; line: 288; <br />file: /addons/recruit/app/index.php; line: 60; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 116; <br />
+
+2017-09-30 09:21:10 SQL Error :
+------------
+String:
+SQL: <br/>UPDATE `ims_recruit_resume` SET `person_works` =  :person_works , `updatetime` =  :updatetime WHERE `uid` =  :__uid<hr/>Params: <br/>array (
+  ':person_works' => 'a:1:{i:1;s:62:"/addons/recruit/app/resource/file/2017-09-30/1506732081658.jpg";}',
+  ':updatetime' => 1506734470,
+  ':__uid' => '658',
+)<hr/>SQL Error: <br/>Unknown column 'person_works' in 'field list'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 295; <br />file: /framework/function/pdo.func.php; line: 66; <br />file: /addons/recruit/app/controller/person/resume.ctrl.php; line: 288; <br />file: /addons/recruit/app/index.php; line: 60; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 116; <br />
+
+2017-09-30 10:48:32 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_recruit_resume` SET `headimgurl` =  :headimgurl , `createtime` =  :createtime , `updatetime` =  :updatetime<hr/>Params: <br/>array (
+  ':headimgurl' => '/addons/recruit/app/resource/file/2017-09-30/1506739712661.jpg',
+  ':createtime' => 1506739712,
+  ':updatetime' => 1506739712,
+)<hr/>SQL Error: <br/>Unknown column 'createtime' in 'field list'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 302; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/app/controller/person/resume.ctrl.php; line: 213; <br />file: /addons/recruit/app/index.php; line: 60; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 116; <br />
+
+2017-09-30 10:49:13 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_recruit_resume` SET `headimgurl` =  :headimgurl , `createtime` =  :createtime , `updatetime` =  :updatetime , `uid` =  :uid<hr/>Params: <br/>array (
+  ':headimgurl' => '/addons/recruit/app/resource/file/2017-09-30/1506739753661.jpg',
+  ':createtime' => 1506739753,
+  ':updatetime' => 1506739753,
+  ':uid' => '661',
+)<hr/>SQL Error: <br/>Unknown column 'createtime' in 'field list'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 302; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/app/controller/person/resume.ctrl.php; line: 214; <br />file: /addons/recruit/app/index.php; line: 60; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 116; <br />
+
+2017-09-30 10:51:15 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_recruit_resume` SET `headimgurl` =  :headimgurl , `createtime` =  :createtime , `updatetime` =  :updatetime , `work_experience` =  :work_experience , `edu_experience` =  :edu_experience , `personal_works` =  :personal_works<hr/>Params: <br/>array (
+  ':headimgurl' => '/addons/recruit/app/resource/file/2017-09-30/1506739875661.jpg',
+  ':createtime' => 1506739875,
+  ':updatetime' => 1506739875,
+  ':work_experience' => '661',
+  ':edu_experience' => '661',
+  ':personal_works' => '661',
+)<hr/>SQL Error: <br/>Unknown column 'createtime' in 'field list'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 302; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/app/controller/person/resume.ctrl.php; line: 217; <br />file: /addons/recruit/app/index.php; line: 60; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 116; <br />
+
+2017-09-30 10:52:02 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_recruit_resume` SET `headimgurl` =  :headimgurl , `createtime` =  :createtime , `uid` =  :uid<hr/>Params: <br/>array (
+  ':headimgurl' => '/addons/recruit/app/resource/file/2017-09-30/1506739922661.jpg',
+  ':createtime' => 1506739922,
+  ':uid' => '661',
+)<hr/>SQL Error: <br/>Unknown column 'createtime' in 'field list'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 302; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/app/controller/person/resume.ctrl.php; line: 214; <br />file: /addons/recruit/app/index.php; line: 60; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 116; <br />
+
+2017-09-30 10:55:28 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_recruit_resume` SET `headimgurl` =  :headimgurl , `createtime` =  :createtime , `updatetime` =  :updatetime , `uid` =  :uid<hr/>Params: <br/>array (
+  ':headimgurl' => '/addons/recruit/app/resource/file/2017-09-30/1506740128661.jpg',
+  ':createtime' => 1506740128,
+  ':updatetime' => 1506740128,
+  ':uid' => '661',
+)<hr/>SQL Error: <br/>Unknown column 'createtime' in 'field list'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 302; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/app/controller/person/resume.ctrl.php; line: 215; <br />file: /addons/recruit/app/index.php; line: 60; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 116; <br />
+
+2017-09-30 11:09:46 SQL Error :
+------------
+String:
+SQL: <br/>INSERT INTO `ims_recruit_resume` SET `headimgurl` =  :headimgurl , `createtime` =  :createtime , `updatetime` =  :updatetime , `uid` =  :uid<hr/>Params: <br/>array (
+  ':headimgurl' => '/addons/recruit/app/resource/file/2017-09-30/1506740986661.jpg',
+  ':createtime' => 1506740986,
+  ':updatetime' => 1506740986,
+  ':uid' => '661',
+)<hr/>SQL Error: <br/>Unknown column 'createtime' in 'field list'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 110; <br />file: /framework/class/db.class.php; line: 302; <br />file: /framework/function/pdo.func.php; line: 71; <br />file: /addons/recruit/app/controller/person/resume.ctrl.php; line: 215; <br />file: /addons/recruit/app/index.php; line: 60; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 116; <br />
+
