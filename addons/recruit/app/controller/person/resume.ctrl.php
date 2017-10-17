@@ -263,20 +263,26 @@ elseif ($op=="headimgupload_deal"){
 
 //个人作品保存
 elseif ($op=="save_personal_works"){
-//    var_dump($_POST);exit();
+//    var_dump($personal_works);exit();
     $person_works = check_pasre($_POST['data']['person_works'],"请上传个人作品");
     $data['person_works'] = str_replace("/temp/","/file/",$person_works);
     $person_works = explode(",",$person_works);
+
     foreach ($person_works as $list){
         $new_path = str_replace("/temp/","/file/",$list);
         rename($_SERVER['DOCUMENT_ROOT'].$list,$_SERVER['DOCUMENT_ROOT'].$new_path);
     }
     $data['person_workmsg'] = check_pasre($_POST['data']['person_workmsg'],"请填写描述作品");
-    if($_POST['data']['works_url']){
 
+    if(is_numeric($_POST['data']['works_url'])===true){
+
+        $id = $_POST['data']['works_url'];
+        $personal_works[$id] = $data;
     }else{
+
         array_push($personal_works,$data);
     }
+
     $personal_works = serialize($personal_works);
     $r = pdo_update(WL."resume",array('personal_works'=>$personal_works,'updatetime'=>time()),array('uid'=>$_SESSION['uid']));
     if($r){

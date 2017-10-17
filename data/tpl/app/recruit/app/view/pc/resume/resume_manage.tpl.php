@@ -1303,10 +1303,8 @@
                                 '</svg></span></div>'
 
                         $(".person_worksbtn1").before(imgbox);
-                        $("#modalbox").animate({"opacity":0},300);
-                        setTimeout(function(){
-                            $("#modalbox").css("display","none");
-                        },300)
+                        $("#modalbox").css("display","none");
+                        $("#person_worksinput").val($("#person_worksinput").val()+","+data.content);
 
                         var images="";
                         $(".person_worksbox img").each(function(){
@@ -1330,10 +1328,8 @@
                 $(".chec_tip1").eq(1).html("");
             }
         });
-        $("#modalbox").animate({"opacity":0},300);
-        setTimeout(function(){
-            $("#modalbox").css("display","none");
-        },300)
+        $("#modalbox").css("display","none");
+
     })
 
     //上传视频弹框显示
@@ -1500,6 +1496,8 @@
 
     //修改个人作品
     $(".person_work .addandeditbtn").on("click",function(){
+        $("#upload_pic").remove();
+
         $("#person_works").hide();
         $("#addpersonworks").show();
         $("#person_worksbox").show();
@@ -1519,8 +1517,8 @@
             },
             success:function(data){
                 var data=JSON.parse(data);
-                console.log(data);return;
-                $("#person_worksbox input[name=works_url]").val(data.person_works);
+               // console.log(data);return;
+//                $("#person_worksbox input[name=works_url]").val(data.person_works);
                 $("#person_worksbox input[name=person_workmsg]").val(data.person_workmsg);
                 var imagebox="";
 
@@ -1539,6 +1537,9 @@
                 });
 
                 $(".person_worksbtn1").before(imagebox);
+                if(works_url.length>5){
+                    $(".person_worksbtn1").hide();
+                }
                 var images="";
                 $(".person_worksbox img").each(function(){
                     images+=$(this).attr("src")+",";
@@ -1654,6 +1655,8 @@
 
     //选择文件
     $('#choosefile').on('change',function(e){
+
+
         var imgfile=this.files[0];
         var src=URL.createObjectURL(imgfile);
         var uploadimg="<img style='width:100%' src='"+src+"' id='upload_pic'>";

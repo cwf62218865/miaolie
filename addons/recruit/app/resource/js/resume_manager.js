@@ -11,29 +11,27 @@ $(".resume_manage_header").on("mouseover",function(){
 
 $(".img_con").click(function () {
     $(".title_content").html("上传头像");
-    $("#modalbox").animate({"opacity":1},300);
+    $("#modalbox").show();
     $(".erweima").attr("id","code1").children().remove();
     code_url("#code1","/app/index.php?c=site&a=entry&m=recruit&do=person&ac=resume&op=manage_resume&");
-    setTimeout(function(){
-        $("#modalbox").css("display","block");
-    },0)
+    $("#modalbox").css("display","block");
+
 });
 
 $(".modalclose").on("click",function(){
-    $("#modalbox").animate({"opacity":0},300);
-    setTimeout(function(){
-        $("#modalbox").css("display","none");
-    },300)
+    $("#modalbox").css("display","none");
 });
 
 $("#person_worksaddbtn").click(function () {
+    $("#upload_pic").remove();
+    $(".one_btn").html('<svg class="icon" aria-hidden="true">\n' +
+        '                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-shangchuan"></use>\n' +
+        '                </svg>')
     $(".title_content").html("个人作品");
     $(".erweima").attr("id","code2").children().remove();
     code_url("#code2","/app/index.php?c=site&a=entry&m=recruit&do=person&ac=resume&op=manage_resume&");
-    $("#modalbox").animate({"opacity":1},300);
-    setTimeout(function(){
-        $("#modalbox").css("display","block");
-    },0)
+    $("#modalbox").css("display","block");
+
 });
 
 //基本信息
@@ -327,6 +325,9 @@ $("body").on("click",".person_worksdelbtn",function(){
     $(".person_worksbox img").each(function(){
         images+=$(this).attr("src")+",";
     });
+    if($(".person_worksbox img").length<6){
+        $(".person_worksbtn1").show();
+    }
     $("#person_worksinput").val(images.substring(0,images.length-1));
 })
 
