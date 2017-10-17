@@ -263,7 +263,7 @@ elseif ($op=="headimgupload_deal"){
 
 //个人作品保存
 elseif ($op=="save_personal_works"){
-
+//    var_dump($_POST);exit();
     $person_works = check_pasre($_POST['data']['person_works'],"请上传个人作品");
     $data['person_works'] = str_replace("/temp/","/file/",$person_works);
     $person_works = explode(",",$person_works);

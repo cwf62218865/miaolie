@@ -260,10 +260,53 @@ elseif($op=="jobs_detail"){
 
 //职位搜索
 elseif ($op=="search_jobs"){
+
     $jobs = m("jobs")->getall_jobs_page();
     include wl_template("member/search_jobs");exit();
 }
 
+//职位搜索ajax
+elseif ($op=="search_jobs_ajax"){
+    if ($_POST['page']){
+        $page = $_POST['page'];
+        $jobs = m("jobs")->getall_jobs_page($page);
+        $html = "";
+        foreach ($jobs as $key=>$list){
+            $html .=
+                "<div class=\"list_item\">
+                    <div class=\"item_con\">
+                        <div class=\"hang1\">
+                            <label class=\"jobname nowrap\">{$list['jobs_name']}</label>
+                            <label class=\"salary\">{$list['wage_min']}-{$list['wage_max']}K</label>
+                        </div>
+                        <div class=\"hang2\">
+                            <label class=\"experience nowrap\">{$list['experience']}</label>
+                            <span class=\"major nowrap\">{$list['education']}</span>
+                            <span class=\"xingzhi\">{$list['number_range']}人/{$list['work_nature']}</span>
+                        </div>
+                        <div class=\"hang3\">
+                            <p>工作经验：<label class=\"job_jingyan\">{$list['experience']}</label></p>
+                            <p class=\"job_point\">工作地点：<label class=\"job_didian\">{$list['city']} {$list['city_area']}</label></p>
+                        </div>
+                        <div class=\"xian1\"></div>
+                        <div class=\"companylogo\">
+                            <div class=\"logo\">
+                                <img src=\"http://localhost/addons/recruit/app/resource/images/qiyelogo.png\">
+                            </div>
+                            <div class=\"companyname\">
+                                <p class=\"name\">{$list['companyname']}</p>
+                                <p class=\"shuxin\">昨天刷新</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"review_statas\">
+                        <div class=\"toudijianli\">投递简历</div>
+                    </div>
+                </div>";
+        }
+        call_back(1,$html);
+    }
+}
 
 
 if(empty($_SESSION['mid'])){

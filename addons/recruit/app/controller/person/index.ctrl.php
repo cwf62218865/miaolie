@@ -62,20 +62,26 @@ elseif ($op=="resume_center"){
     include wl_template("person/person_collection");exit();
 }
 
-
+//投递简历
 elseif ($op=="post_resume"){
-
+//    var_dump($_POST);exit();
     $data['jobs_id'] = check_pasre($_POST['data_id'],"参数错误");
     $data['uid'] = check_pasre($_POST['uid'],"参数错误");
     $data['resume_id'] = $resume['id'];
     $data['puid'] = $resume['uid'];
     $data['direction'] = 2;
     $data['createtime'] = time();
-    $r = insert_table($data,WL."jobs_apply");
-    if($r){
-        call_back(1,"ok");
+    $jobs_apply = pdo_fetch("select * from ".tablename(WL."jobs_apply")." where jobs_id=".$data['jobs_id']." and resume_id=".$data['resume_id']);
+    if($jobs_apply){
+        call_back(2,"已存在");
     }else{
-        call_back(2,"no");
+        $r = insert_table($data,WL."jobs_apply");
+        if($r){
+            call_back(1,"ok");
+        }else{
+            call_back(2,"no");
+        }
     }
+
 //    var_dump($_POST);exit();
 }

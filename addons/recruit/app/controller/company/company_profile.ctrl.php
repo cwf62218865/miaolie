@@ -95,5 +95,34 @@ elseif ($op=="save_website"){
 }
 
 
+//保存公司信息
+elseif ($op=="save_company_profile"){
+//    var_dump($_POST);exit();
+    $data['nature'] = check_pasre($_POST['data']['company_nature'],"参数错误");
+    $data['number'] = check_pasre($_POST['data']['company_scale'],"参数错误");
+    $data['industry'] = check_pasre($_POST['data']['company_industry'],"参数错误");
+    $data['city'] = check_pasre($_POST['data']['company_area'],"参数错误");
+    $data['slogan'] = check_pasre($_POST['data']['slogan'],"参数错误");
+    $data['introduce'] = check_pasre($_POST['data']['companymsg_introduce'],"参数错误");
+    $data['city'] = check_pasre($_POST['data']['city'],"参数错误");
+    $data['address'] = check_pasre($_POST['data']['address'],"参数错误");
+    $data['city_area'] = check_pasre($_POST['data']['area'],"参数错误");
+    $data['atlas'] = check_pasre($_POST['data']['person_works'],"参数错误");
+    $coordinate = explode(",",$_POST['data']['coordinate']);
+    $data['retoate_x'] = $coordinate[0];
+    $data['retoate_y'] = $coordinate[1];
+    $data['tag'] = check_pasre($_POST['data']['company_welfare'],"参数错误");
+    $data['website'] = check_pasre($_POST['data']['company_url'],"参数错误");
+    $data['updatetime'] = time();
+    $r = pdo_update(WL."company_profile",$data,array('uid'=>$_SESSION['uid']));
+    if($r){
+        call_back(1,"ok");
+    }else{
+        call_back(2,"no");
+    }
+//    var_dump($_POST);exit();
+}
+
+
 
 

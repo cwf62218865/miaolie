@@ -42,7 +42,7 @@
 
                         </span>
 
-                        <span class="collections">
+                        <span class="collections collection" data-id="{php echo $jobs['id']}">
                             <svg class="icon">
                                 <use xlink:href="#icon-shoucangguanli"></use>
                             </svg>
@@ -99,11 +99,11 @@
                         工作地点：{php echo $jobs['city'].$jobs['city_area'].$jobs['address']}
                     </div>
 
-                    <div style="margin-top: 20px">
+                    <div style="margin-top: 20px" data-id="{php echo $jobs['uid']}">
                         {loop explode(',',$jobs['tag']) $list}
                         <span class="welfare_label">{$list}</span>
                         {/loop}
-                        <span class="delivery_resume">投递简历</span>
+                        <span class="delivery_resume" data-id="{php echo $jobs['id']}">投递简历</span>
                     </div>
 
 
@@ -435,7 +435,39 @@ $(function () {
 
     $("#page").html(pages(1,7));
 
+    $(".delivery_resume").click(function () {
+        var data_id = $(this).attr('data-id');
+        var uid = $(this).parent().attr('data-id');
+        $.ajax({
+            type:"post",
+            url:"{php echo app_url('person/index/post_resume')}",
+            data:{
+                data_id:data_id,
+                uid:uid
+            },
+            success:function (data) {
 
+            }
+        })
+    })
+
+    $(".collection").click(function () {
+        var data_id = $(this).attr("data-id");
+        $.ajax({
+            type:"post",
+            url:"{php echo app_url('person/collection/collection_jobs')}",
+            data:{
+                jobs_id:data_id
+            },
+            success:function (data) {
+                var data = JSON.parse(data);
+                console.log(data.content);
+                if(data.status==1){
+                    console.log(data.content);
+                }
+            }
+        })
+    })
 })
 </script>
 </html>

@@ -190,7 +190,7 @@
 
                            <input type="hidden" name="works_url" id="works_id">
                            <span class="color666  redxing companymsg_name">公司图集</span>
-                           <!--<div class="person_worksbox" style="margin-left: 88px">-->
+                           <div class="person_worksbox" style="margin-left: 88px">
                                <!--<div class="person_worksbtn">-->
                                    <!--<img src="{WL_URL_ARES}images/person_img.png">-->
                                     <!--<span class="person_worksdelbtn">-->
@@ -426,7 +426,7 @@ $("#company_logo").on("change",function(){
 })
 
 
-$.fromdata("#company_nomsgbox","test.php","#save_company_nomsg",function(data){
+$.fromdata("#company_nomsgbox","{php echo app_url('company/company_profile/save_company_profile')}","#save_company_nomsg",function(data){
     //do something
 })
 
@@ -512,7 +512,17 @@ $(".modalbtn").on("click",function(){
             var data=JSON.parse(data);
             if(data.status==1){
                 //location = location;
-                $(".icon1").before("<img src='data.others'/>");
+                var html ="<div class=\"person_worksbtn\">\n" +
+                    "<img src="+data.content+">\n" +
+                    "<span class=\"person_worksdelbtn\">\n" +
+                    "<svg class=\"icon\" aria-hidden=\"true\">\n" +
+                    "<use xlink:href=\"#icon-shanchu\"></use>\n" +
+                    "</svg>\n" +
+                    "</span>\n" +
+                    "</div>";
+
+                $(".person_worksbtn1").before(html);
+                $("#person_worksinput").val(data.content);
 //                       $(".img_tx img").eq(0).attr("src",data.others);
             }
             $(".chec_tip1").eq(1).html("");
@@ -524,4 +534,5 @@ $(".modalbtn").on("click",function(){
     },300)
 })
 </script>
+
 </html>
