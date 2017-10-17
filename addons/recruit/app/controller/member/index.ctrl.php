@@ -154,12 +154,6 @@ elseif ($op=="send_code"){
 }
 
 
-//职位详情页
-elseif ($op=="jobs_detail"){
-
-}
-
-
 //手机上传头像界面
 elseif ($op=="resume_headimgupload"){
     $kind = "简历头像上传";
@@ -243,6 +237,33 @@ elseif ($op=="add"){
     }
 //    include wl_template("position/add");
 }
+
+
+//公司详情页
+elseif($op=="company_detail"){
+    if($_GPC['company_id']) {
+        $company = pdo_fetch("select * from ".tablename(WL."company_profile")." where id=".$_GPC['company_id']);
+        include wl_template("member/company_pages");
+        exit();
+    }
+}
+
+//职位详情页
+elseif($op=="jobs_detail"){
+    if($_GPC['jobs_id']){
+        $jobs = pdo_fetch("select * from ".tablename(WL."jobs")." where id=".$_GPC['jobs_id']);
+        $company = pdo_fetch("select * from ".tablename(WL."company_profile")." where uid=".$jobs['uid']);
+        include wl_template("member/jobs_detail");exit();
+    }
+
+}
+
+//职位搜索
+elseif ($op=="search_jobs"){
+    $jobs = m("jobs")->getall_jobs_page();
+    include wl_template("member/search_jobs");exit();
+}
+
 
 
 if(empty($_SESSION['mid'])){
