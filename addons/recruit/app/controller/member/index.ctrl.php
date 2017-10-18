@@ -253,6 +253,9 @@ elseif($op=="jobs_detail"){
     if($_GPC['jobs_id']){
         $jobs = pdo_fetch("select * from ".tablename(WL."jobs")." where id=".$_GPC['jobs_id']);
         $company = pdo_fetch("select * from ".tablename(WL."company_profile")." where uid=".$jobs['uid']);
+        $jobs_apply = pdo_fetch("select id from ".tablename(WL."jobs_apply")." where jobs_id=".$_GPC['jobs_id']." and puid=".$_SESSION['uid']);
+//        echo "select id from ".tablename(WL."jobs_apply")." where jobs_id=".$_GPC['jobs_id']." and puid=".$_SESSION['uid'];exit();
+//        var_dump($jobs_apply);exit();
         include wl_template("member/jobs_detail");exit();
     }
 
@@ -260,23 +263,31 @@ elseif($op=="jobs_detail"){
 
 //职位搜索
 elseif ($op=="search_jobs"){
-
+    $jobs_count = pdo_fetchcolumn("select count(*) from ".tablename(WL."jobs"));
+//    echo $jobs_count;exit();
     $jobs = m("jobs")->getall_jobs_page();
     include wl_template("member/search_jobs");exit();
 }
 
 //职位搜索ajax
 elseif ($op=="search_jobs_ajax"){
-    if ($_POST['page']){
-        $page = $_POST['page'];
+
+    if ($_POST['data']){
+        $page = $_POST['data']['page'];
         $jobs = m("jobs")->getall_jobs_page($page);
         $html = "";
         foreach ($jobs as $key=>$list){
+            if($list['post_status']=="已投递"){
+                $toudijianli = "toudijianli1";
+            }else{
+                $toudijianli = "toudijianli";
+            }
+            $list['updatetime'] = date("Y-m-d",$list['updatetime']);
             $html .=
                 "<div class=\"list_item\">
                     <div class=\"item_con\">
                         <div class=\"hang1\">
-                            <label class=\"jobname nowrap\">{$list['jobs_name']}</label>
+                            <a class=\"jobname nowrap\" href='".app_url('member/index/jobs_detail',array('jobs_id'=>$list['id']))."'>{$list['jobs_name']}</a>
                             <label class=\"salary\">{$list['wage_min']}-{$list['wage_max']}K</label>
                         </div>
                         <div class=\"hang2\">
@@ -291,16 +302,16 @@ elseif ($op=="search_jobs_ajax"){
                         <div class=\"xian1\"></div>
                         <div class=\"companylogo\">
                             <div class=\"logo\">
-                                <img src=\"http://localhost/addons/recruit/app/resource/images/qiyelogo.png\">
+                                <img src=\"{$list['headimgurl']}\">
                             </div>
                             <div class=\"companyname\">
                                 <p class=\"name\">{$list['companyname']}</p>
-                                <p class=\"shuxin\">昨天刷新</p>
+                                <p class=\"shuxin\">{$list['updatetime']}</p>
                             </div>
                         </div>
                     </div>
-                    <div class=\"review_statas\">
-                        <div class=\"toudijianli\">投递简历</div>
+                    <div class=\"review_statas\" data-id='{$list[uid]}'>
+                        <div class=\"{$toudijianli}\" data-id='{$list[id]}'>{$list['post_status']}</div>
                     </div>
                 </div>";
         }

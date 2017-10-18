@@ -1132,8 +1132,8 @@
     outline: none;
 }
 .relative #salarychoice{
-    width: 60px;
-    margin-left: 0px;
+    width: 180px;
+    margin-left: 20px;
 }
 .select_option .selectinput .general-input{
     width: 120px;

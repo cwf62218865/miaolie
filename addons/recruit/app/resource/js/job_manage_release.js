@@ -133,7 +133,7 @@ $(".release_choice").on("click",function(){
 //请求职位提示数据
 var job_template=function(job,name,page){
     $.ajax({
-        url:"",
+        url:"/app/index.php?c=site&a=entry&m=recruit&do=company&ac=jobs&op=search_position&",
         type:"post",
         data:{
             job:job,
@@ -145,8 +145,9 @@ var job_template=function(job,name,page){
             if(data.status==1){
                 if(name=="duty"){
                     var content="";
+                   // alert(data.content.length);
                     for(var i=0 ;i<data.content.length;i++){
-                        content='<div class="job_template_msgs">'+
+                        content +='<div class="job_template_msgs">'+
                             '<span class="job_template_msgscontent">'+data.content[i]+'</span>'+
                             '<span class="job_template_msgbtn">'+
                             '<svg class="icon">'+
@@ -160,7 +161,7 @@ var job_template=function(job,name,page){
                 }else if(name=="requirement"){
                     var content="";
                     for(var i=0 ;i<data.content.length;i++){
-                        content='<div class="job_template_msgs">'+
+                        content+='<div class="job_template_msgs">'+
                             '<span class="job_template_msgscontent">'+data.content[i]+'</span>'+
                             '<span class="job_template_msgbtn">'+
                             '<svg class="icon">'+
@@ -174,9 +175,9 @@ var job_template=function(job,name,page){
                 }else{
                     var content1="";
                     var content2="";
-                    for(var i=0 ;i<data.content1.length;i++){
-                        content1='<div class="job_template_msgs">'+
-                            '<span class="job_template_msgscontent">'+data.content1[i]+'</span>'+
+                    for(var i=0 ;i<data.content.length;i++){
+                        content1 +='<div class="job_template_msgs">'+
+                            '<span class="job_template_msgscontent">'+data.content[i]+'</span>'+
                             '<span class="job_template_msgbtn">'+
                             '<svg class="icon">'+
                             '<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-kongxingou"></use>'+
@@ -185,9 +186,9 @@ var job_template=function(job,name,page){
                             '<div style="clear:both"></div>'+
                             '</div>';
                     }
-                    for(var i=0 ;i<data.content2.length;i++){
-                        content2='<div class="job_template_msgs">'+
-                            '<span class="job_template_msgscontent">'+data.content2[i]+'</span>'+
+                    for(var i=0 ;i<data.others.length;i++){
+                        content2 +='<div class="job_template_msgs">'+
+                            '<span class="job_template_msgscontent">'+data.others[i]+'</span>'+
                             '<span class="job_template_msgbtn">'+
                             '<svg class="icon">'+
                             '<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-kongxingou"></use>'+

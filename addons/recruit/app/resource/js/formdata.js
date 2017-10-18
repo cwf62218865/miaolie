@@ -164,7 +164,7 @@ jQuery.extend({
         salarys();
 
         if(input){
-            $(input).val(data[0]);
+            //$(input).val(data[0]);
 
             $(input).on("click",function(){
                 if($(".salarys").height()==0){

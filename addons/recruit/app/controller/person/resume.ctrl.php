@@ -34,6 +34,13 @@ if(trim($resume['personal_works'])){
     $personal_works = array();
 }
 
+
+if(trim($resume['honor'])){
+    $honor = unserialize($resume['honor']);
+}else{
+    $honor = array();
+}
+
 //职位申请处理
 if($op=="send_resume"){
     $data['puid'] = $_SESSION['uid'];
@@ -343,12 +350,55 @@ elseif ($op=="personal_works_deal"){
 //荣誉证书保存
 elseif ($op=="save_certificate"){
 
+
+    $data['certificate_img'] = check_pasre($_POST['data']['certificate_img'],"参数错误");
+    $data['certificate_time'] = check_pasre($_POST['data']['certificate_time'],"参数错误");
+    $data['certificate_content'] = check_pasre($_POST['data']['certificate_content'],"参数错误");
+
+    if(is_numeric($_POST['data']['certificate_id'])===true){
+        $id = $_POST['data']['certificate_id'];
+        $honor[$id] = $data;
+    }else{
+        array_push($honor,$data);
+    }
+    $honor = serialize($honor);
+    $r = pdo_update(WL."resume",array('honor'=>$honor),array('uid'=>$_SESSION['uid']));
+    if($r){
+        call_back(1,"ok");
+    }else{
+        call_back(2,"no");
+    }
+//    var_dump($_POST);exit()
+}
+
+
+//某段荣誉回填调用
+elseif ($op=="show_honor"){
+    if($_GPC['data_id']!==false){
+        echo json_encode($honor[$_GPC['data_id']]);exit();
+    }
+}
+
+//删除某段荣誉
+elseif ($op=="honor_delete"){
+    if(is_numeric($_POST['data_id'])===true){
+        $id = $_POST['data_id'];
+        unset($honor[$id]);
+        $honor = serialize($honor);
+        $r = pdo_update(WL."resume",array('honor'=>$honor,'updatetime'=>time()),array('uid'=>$_SESSION['uid']));
+        if($r){
+            call_back(1,"删除成功");
+        }else{
+            call_back(2,"删除失败");
+        }
+    }
 }
 
 //荣誉证书上传
 elseif ($op=="certificate_upload"){
     $temp_certificate = upload_img($_FILES);
-    echo json_encode($temp_certificate);exit();
+    call_back(1,$temp_certificate);
+//    echo json_encode($temp_certificate);exit();
 }
 
 //下载简历

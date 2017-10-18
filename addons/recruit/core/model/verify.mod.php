@@ -48,6 +48,7 @@ function send_codes($phone){
     wl_load()->model('sms');
     if(!$_SESSION['last_sendtime'])
     {
+        echo 1;exit();
         $_SESSION['phone_code']=mt_rand(1000,9999);
         $_SESSION['last_sendtime']=time();
         if(sendSms($phone,$_SESSION['phone_code'])){
@@ -56,8 +57,10 @@ function send_codes($phone){
     }
     else
     {
+
         if ( (time() - $_SESSION['last_sendtime']) >50 )
         {
+
             $_SESSION['phone_code']=mt_rand(1000,9999);
             $_SESSION['last_sendtime']=time();
             if(sendSms($phone,$_SESSION['phone_code'])){

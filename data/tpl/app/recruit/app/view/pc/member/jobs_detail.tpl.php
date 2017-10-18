@@ -103,7 +103,7 @@
                         <?php  if(is_array(explode(',',$jobs['tag']))) { foreach(explode(',',$jobs['tag']) as $list) { ?>
                         <span class="welfare_label"><?php  echo $list;?></span>
                         <?php  } } ?>
-                        <span class="delivery_resume" data-id="<?php  echo $jobs['id']?>">投递简历</span>
+                        <span class="<?php  if($jobs_apply) { ?>delivery_resume1<?php  } else { ?>delivery_resume<?php  } ?>" data-id="<?php  echo $jobs['id']?>"><?php  if($jobs_apply) { ?>已投递<?php  } else { ?>投递简历<?php  } ?></span>
                     </div>
 
 
@@ -446,7 +446,10 @@ $(function () {
                 uid:uid
             },
             success:function (data) {
-
+                var data=JSON.parse(data);
+                if(data.status==1){
+                    $(".delivery_resume").html("已投递").removeClass("delivery_resume").addClass("delivery_resume1").unbind("click");
+                }
             }
         })
     })

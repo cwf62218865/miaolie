@@ -9,6 +9,7 @@ defined('IN_IA') or exit('Access Denied');
 
 if($op=="index"){
     $company = m('company')->get_profile($_SESSION['uid']);
+//    var_dump($company);exit();
 //    include wl_template("company/company_message");exit();
     if(!$company['atlas'] ||!$company['introduce']){
         include wl_template("company/company_nomessage");
@@ -24,8 +25,8 @@ elseif ($op=="first_index"){
 }
 
 //跟换头像
-elseif ($op=="change_headimgurl"){
-    var_dump($_FILES);exit();
+elseif ($op=="hedimgurl_upload"){
+
     $worksurl = upload_img($_FILES);
     call_back(1,$worksurl);
 }
@@ -98,15 +99,16 @@ elseif ($op=="save_website"){
 //保存公司信息
 elseif ($op=="save_company_profile"){
 //    var_dump($_POST);exit();
-    $data['nature'] = check_pasre($_POST['data']['company_nature'],"参数错误");
-    $data['number'] = check_pasre($_POST['data']['company_scale'],"参数错误");
-    $data['industry'] = check_pasre($_POST['data']['company_industry'],"参数错误");
-    $data['city'] = check_pasre($_POST['data']['company_area'],"参数错误");
-    $data['slogan'] = check_pasre($_POST['data']['slogan'],"参数错误");
-    $data['introduce'] = check_pasre($_POST['data']['companymsg_introduce'],"参数错误");
-    $data['city'] = check_pasre($_POST['data']['city'],"参数错误");
-    $data['address'] = check_pasre($_POST['data']['address'],"参数错误");
-    $data['city_area'] = check_pasre($_POST['data']['area'],"参数错误");
+    $data['nature'] = check_pasre($_POST['data']['company_nature'],"参数错误1");
+    $data['headimgurl'] = check_pasre($_POST['data']['company_logo'],"参数错误2");
+    $data['number'] = check_pasre($_POST['data']['company_scale'],"参数错误3");
+    $data['industry'] = check_pasre($_POST['data']['company_industry'],"参数错误4");
+    $data['city'] = check_pasre($_POST['data']['area'],"5");
+    $data['slogan'] = check_pasre($_POST['data']['slogan'],"参数错误6");
+    $data['introduce'] = check_pasre($_POST['data']['companymsg_introduce'],"参数错误7");
+    $data['city'] = check_pasre($_POST['data']['city'],"参数错误8");
+    $data['address'] = check_pasre($_POST['data']['address'],"参数错误9");
+    $data['city_area'] = check_pasre($_POST['data']['area'],"参数错误0");
     $data['atlas'] = check_pasre($_POST['data']['person_works'],"参数错误");
     $coordinate = explode(",",$_POST['data']['coordinate']);
     $data['retoate_x'] = $coordinate[0];

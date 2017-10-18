@@ -20,14 +20,26 @@ class jobs{
 
     //职位分页
     public function getall_jobs_page($page=1){
-        $page = ($page -1)*4;
-        $limit = " limit ".$page.",4";
+        $page = ($page -1)*6;
+        $limit = " limit ".$page.",6";
         $jobs = pdo_fetchall("select * from ".tablename(WL."jobs")." order by open desc".$limit);
+        $job = "";
+        foreach ($jobs as $li){
+            $jobs_apply = pdo_fetch("select id from ".tablename(WL."jobs_apply")." where jobs_id=".$li['id']." and puid=".$_SESSION['uid']);
+            $headimgurl = pdo_fetch("select headimgurl from ".tablename(WL.'company_profile')." where uid=".$li['uid']);
+            if($jobs_apply){
+                $li['post_status'] = "已投递";
+            }else{
+                $li['post_status'] = "投递简历";
+            }
+            $li['headimgurl'] = $headimgurl['headimgurl'];
+            $job[] = $li;
+        }
 //        foreach ($jobs as $list){
 //            $company = pdo_fetch("select * from ".tablename(WL."company_profile")." where uid=".$list['uid']);
 //            $list['com']
 //        }
-        return $jobs;
+        return $job;
     }
 
 public function search_jobs(){

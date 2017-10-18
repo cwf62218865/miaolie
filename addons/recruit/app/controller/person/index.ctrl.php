@@ -31,6 +31,55 @@ elseif ($op=="send_resume"){
     include wl_template("person/send_resume");exit();
 }
 
+elseif ($op=="send_resume_ajax"){
+    if($_POST['page']){
+        $apply_jobs = m("resume")->jobs_apply($_SESSION['uid'],$_POST['page']);
+        foreach ($apply_jobs as $list){
+            $html .= "<div class=\"list_item \">
+                    <div class=\"item_con\">
+                        <div class=\"hang1\">
+                            <a class=\"jobname nowrap\" href='".app_url('member/index/jobs_detail',array('jobs_id'=>$list['id']))."'>{$list['jobs_name']}</a>
+                            <a class=\"salary\">{$list['wage_min']}-{$list['wage_max']}k</a>
+                        </div>
+                        <div class=\"hang2\">
+                            <a class=\"company nowrap\">{$list['companyname']}</a>
+                            <span class=\"address nowrap\">{$list['city']}</span>
+                            <span class=\"date\">".date('Y-m-d',$list['updatetime'])."</span>
+                        </div>
+                        <div class=\"hang3\">
+                                                        <span class=\"fuli\">五险</span>
+                                                        <span class=\"fuli\">住房公积金</span>
+                                                    </div>
+                        <div class=\"xian1\"></div>
+                        <div class=\"status\">
+                                                            <p class=\"time\">
+                                    <svg class=\"icon icon_time\" aria-hidden=\"true\">
+                                        <use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#icon-shijian\"></use>
+                                    </svg>
+                                    <span>时间：10月13日 星期五 10:00</span>
+                                </p>
+                                <p class=\"review_tel\">
+                                    <svg class=\"icon icon_tel\" aria-hidden=\"true\">
+                                        <use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#icon-lianxiren\"></use>
+                                    </svg>
+                                    <span>联系人：张先生</span>
+                                </p>
+                                <p class=\"review_address\">
+                                    <svg class=\"icon icon_address\" aria-hidden=\"true\">
+                                        <use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#icon-didian\"></use>
+                                    </svg>
+                                    <span>地址：小小小</span>
+                                </p>
+                                <div class=\"btn_ditu\"></div>
+                                                    </div>
+                    </div>
+                </div>";
+        }
+
+        call_back(1,$apply_jobs);
+    }
+}
+
 //收藏职位列表
 elseif ($op=="collection_jobs_list"){
     $collect_jobs = pdo_fetchall("select jobs_id,createtime from ".tablename(WL."collect_jobs")." where uid=".$_SESSION['uid']);
@@ -71,6 +120,7 @@ elseif ($op=="post_resume"){
     $data['puid'] = $resume['uid'];
     $data['direction'] = 2;
     $data['createtime'] = time();
+
     $jobs_apply = pdo_fetch("select * from ".tablename(WL."jobs_apply")." where jobs_id=".$data['jobs_id']." and resume_id=".$data['resume_id']);
     if($jobs_apply){
         call_back(2,"已存在");

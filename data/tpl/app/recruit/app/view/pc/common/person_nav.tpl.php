@@ -1,34 +1,4 @@
-<?php defined('IN_IA') or exit('Access Denied');?><!--<div class="con_top">-->
-    <!--<div class="items <?php  if($_GPC['op']=='send_resume') { ?>select<?php  } ?>">-->
-        <!--<svg class="icon icon_item" aria-hidden="true">-->
-            <!--<use xlink:href="#icon-toudiguanli"></use>-->
-        <!--</svg>-->
-        <!--<a href="<?php  echo app_url('person/index/send_resume')?>" class="span">投递管理</a>-->
-    <!--</div>-->
-    <!--<div class="items <?php  if($_GPC['op']=='manage_resume') { ?>select<?php  } ?>">-->
-        <!--<svg class="icon icon_item" aria-hidden="true">-->
-            <!--<use xlink:href="#icon-jianliguanli"></use>-->
-        <!--</svg>-->
-        <!--<a href="<?php  echo app_url('person/resume/manage_resume')?>" class="span">简历管理</a>-->
-    <!--</div>-->
-    <!--<div class="items <?php  if($_GPC['op']=='collection_jobs_list') { ?>select<?php  } ?>">-->
-        <!--<svg class="icon icon_item" aria-hidden="true">-->
-            <!--<use xlink:href="#icon-shoucangguanli"></use>-->
-        <!--</svg>-->
-        <!--<a href="<?php  echo app_url('person/index/collection_jobs_list')?>" class="span">收藏订阅</a>-->
-    <!--</div>-->
-    <!--<div class="items">-->
-        <!--<svg class="icon icon_item" aria-hidden="true">-->
-            <!--<use xlink:href="#icon-zhichangxinyong"></use>-->
-        <!--</svg>-->
-        <!--<a href="" class="span">职场信用</a>-->
-    <!--</div>-->
-<!--</div>-->
-
-
-
-
-<div class="con_top">
+<?php defined('IN_IA') or exit('Access Denied');?><div class="con_top">
     <div class="items">
         <a class="items_yuan itemm1" href="<?php  echo app_url('person/index/send_resume')?>">
             <svg class="icon icon_item" aria-hidden="true">

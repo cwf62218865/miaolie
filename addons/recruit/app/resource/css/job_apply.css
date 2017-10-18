@@ -235,13 +235,19 @@
     margin-right: 50px;
 }
 .yema{
-    width: 10px;
-    height: 10px;
+    display: inline-block;
+    width: 14px;
+    line-height: 14px;
+    height: 14px;
     padding: 5px;
     color: #8892a4;
     vertical-align: middle;
     border: 1px solid #eeeeee;
     cursor: pointer;
+}
+.yema:hover{
+    background: #0099cc;
+    color: #ffffff;
 }
 .hangver{
     height: 22px;
@@ -252,7 +258,7 @@
     color: #0099cc;
 }
 .slected{
-background: #0099cc;
+    background: #0099cc;
     color: #ffffff;
 }
 .toudijianli{
@@ -262,6 +268,14 @@ background: #0099cc;
     width: 400px;
     cursor: pointer;
     color: #0099cc;
+}
+.toudijianli1{
+    float: left;
+    height: 50px;
+    border-top: 1px solid #eeeeee;
+    width: 400px;
+    cursor: pointer;
+    color: #bbb;
 }
 .major{
     width: 100px;
@@ -290,7 +304,11 @@ background: #0099cc;
     width: 60px;
     height: 60px;
     float: left;
+    overflow: hidden;
     margin-right: 20px;
+}
+.companylogo .logo img{
+    width: 100%;
 }
 .companyname{
     float: left;
@@ -303,39 +321,39 @@ background: #0099cc;
     color: #bbbbbb;
     margin-top: 15px;
 }
-.pages_btn{
-    float: left;
-    margin-left: 200px;
-    margin-top: 50px;
-    margin-bottom: 80px;
-}
-.pre_page,.next_page,.pages_btn .page{
-    border: 1px solid #eeeeee;
-    display: inline-block;
-    height: 34px;
-    line-height: 34px;
-    text-align: center;
-    margin-right: 6px;
-    color: #666666;
-    cursor: pointer;
-}
-.pre_page:hover,
-.next_page:hover,
-.page:hover{
-    background: #0099cc;
-    color: #ffffff;
-}
-.pre_page,.next_page{
-    width: 62px;
-    height: 34px;
-}
-.pages_btn .page{
-    width: 34px;
-}
-.pages_btn .select{
-    background: #0099cc;
-    color: #ffffff;
-}
+/*.pages_btn{*/
+    /*float: left;*/
+    /*margin-left: 200px;*/
+    /*margin-top: 50px;*/
+    /*margin-bottom: 80px;*/
+/*}*/
+/*.pre_page,.next_page,.pages_btn .page{*/
+    /*border: 1px solid #eeeeee;*/
+    /*display: inline-block;*/
+    /*height: 34px;*/
+    /*line-height: 34px;*/
+    /*text-align: center;*/
+    /*margin-right: 6px;*/
+    /*color: #666666;*/
+    /*cursor: pointer;*/
+/*}*/
+/*.pre_page:hover,*/
+/*.next_page:hover,*/
+/*.page:hover{*/
+    /*background: #0099cc;*/
+    /*color: #ffffff;*/
+/*}*/
+/*.pre_page,.next_page{*/
+    /*width: 62px;*/
+    /*height: 34px;*/
+/*}*/
+/*.pages_btn .page{*/
+    /*width: 34px;*/
+/*}*/
+/*.pages_btn .select{*/
+    /*background: #0099cc;*/
+    /*color: #ffffff;*/
+/*}*/
 .part_one{
     height: auto;
     width: 100%;

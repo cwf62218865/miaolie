@@ -31,7 +31,7 @@
             <!--左侧菜单-->
 
             <div class="resume_left_menu">
-                <a href="#" class="menus">
+                <a href="<?php  echo app_url('resume/index',array('uid'=>$resume['uid']))?>" class="menus">
                     <svg class="icon icon_item" aria-hidden="true">
                         <use xlink:href="#icon-genghuanmoban"></use>
                     </svg>
@@ -39,7 +39,7 @@
                         更换模板
                     </div>
                 </a>
-                <a href="#" class="menus">
+                <a href="<?php  echo app_url('resume/index',array('uid'=>$resume['uid']))?>" class="menus">
                     <svg class="icon icon_item" aria-hidden="true">
                         <use xlink:href="#icon-xiazaijianli"></use>
                     </svg>
@@ -99,7 +99,7 @@
                             <use xlink:href="#icon-gerenxinxi"></use>
                         </svg>
                         <span class="basic_msg_contents"><?php  if($resume['sex']==1) { ?>男<?php  } else { ?>女<?php  } ?></span>
-                        <span class="basic_msg_contents"><?php  echo date('Y-m-d')-$resume['birthday']?>岁</span>
+                        <span class="basic_msg_contents"><?php  echo ceil(date('Y-m-d')-$resume['birthday'])?>岁</span>
                         <span class="basic_msg_contents"><?php  echo $resume['political_status']?></span>
                         <span class="basic_msg_contents"><?php  echo $resume['education']?></span>
                         <span class="basic_msg_contents"><?php  echo $resume['work_status']?></span>
@@ -875,12 +875,14 @@
 
 
                 </div>
+                <?php  if(count($personal_works)<2) { ?>
                 <span class="addandeditbtn" id="addpersonworks">
                     <svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-tianjia"></use>
                     </svg>
                     添加
                 </span>
+                <?php  } ?>
             </div>
 
 
@@ -977,35 +979,17 @@
                     </div>
                     <div class="resume_exp" id="certificate" style=";margin-bottom: 180px">
                         <div class="person_works">
+                            <?php  if(is_array($honor)) { foreach($honor as $id => $list) { ?>
                             <div class="relative">
-                                <span class="certificate">2013年3月获得全国中小学生数学竞赛一等奖</span>
-                                <span class="addandeditbtn" style="top: 0"  data-id="1">
+                                <span class="certificate " style="display: inline-block;width: 570px;white-space: nowrap;text-overflow: ellipsis;"><?php  echo $list['certificate_content'];?></span>
+                                <span class="addandeditbtn" style="top: 0"  data-id="<?php  echo $id;?>">
                                     <svg class="icon" aria-hidden="true">
                                         <use xlink:href="#icon-xiugai"></use>
                                     </svg>
                                     修改
                                 </span>
                             </div>
-
-                            <div class="relative">
-                                <span class="certificate">2013年3月获得全国中小学生数学竞赛一等奖</span>
-                                <span class="addandeditbtn" style="top: 0"  data-id="2">
-                                    <svg class="icon" aria-hidden="true">
-                                        <use xlink:href="#icon-xiugai"></use>
-                                    </svg>
-                                    修改
-                                </span>
-                            </div>
-
-                            <div class="relative">
-                                <span class="certificate">2013年3月获得全国中小学生数学竞赛一等奖</span>
-                                <span class="addandeditbtn" style="top: 0" data-id="3">
-                                    <svg class="icon" aria-hidden="true">
-                                        <use xlink:href="#icon-xiugai"></use>
-                                    </svg>
-                                    修改
-                                </span>
-                            </div>
+                            <?php  } } ?>
                         </div>
                     </div>
 
@@ -1078,7 +1062,7 @@
                     <div class=" person_changes_left" style="margin-top: 20px">
                         <span class="font999 resume_msg_name" style="float: left">获奖内容</span>
                         <div class="cwfreg4content" style="display: inline-block;margin-left: 20px;height: 64px;border: 1px solid #f5f5f5;width: 359px;background-color: #f5f5f5">
-                            <textarea style="width: 316px"  class="cwftextarea" id="certificate_content"  placeholder="你在这个岗位的职责"></textarea>
+                            <textarea style="width: 316px"  class="cwftextarea" id="certificate_content" maxlength="60"  placeholder="请输入你的获奖内容"></textarea>
                         </div>
 
                         <div  class="cwftextareatip" style="height: auto;margin-top: 10px">
@@ -1319,7 +1303,8 @@
 //                        var uploadurl = "<?php  echo app_url('person/resume/headimg_upload')?>";
                         location = location;
                     }else if(id=="code3"){
-
+                        $("#certificateaddbtn").html("<img style='width: 100%' src='"+data.content+"'>");
+                        $("#certificate_img").val(data.content);
                     }else if(id=="code4"){
                         $(".person_video").attr("src",data.others);
                     }
@@ -1574,7 +1559,7 @@
 
 
     //荣誉证书
-    $.fromdata("#certificatebox","<?php  echo save_certificate?>","#save_certificate_msg",function(data){
+    $.fromdata("#certificatebox","<?php  echo app_url('person/resume/save_certificate')?>","#save_certificate_msg",function(data){
         var data = JSON.parse(data);
         if(data.status==1){
             location = location;
@@ -1596,26 +1581,30 @@
         $("#certificatebox .delbtn").attr("data-id",data_id);
         $("#certificate_id").val(data_id);
         $.ajax({
-            url:"",
+            url:"<?php  echo app_url('person/resume/show_honor')?>",
             type:"post",
             data:{
                 data_id:data_id
             },
             success:function(data){
                 var data=JSON.parse(data);
+                console.log(data);
                 $("#certificatebox input[name=certificate_time]").val(data.certificate_time);
                 $("#certificatebox input[name=certificate_content]").val(data.certificate_content);
-                var imagebox="";
-                imagebox+="<div id='certificateaddbtn'>"+
-                        "<img src='"+data.src+"'>"+
-                        "<span class='person_worksdelbtn' style='width: 120px;height: 120px;'>"+
-                        "<svg class='icon' aria-hidden='true'>"+
-                        "<use xlink:href='#icon-shanchu'></use>"+
-                        "</svg>"+
-                        "</span>"+
-                        "</div>";
-
-                $("#certificatebox .person_worksbtn1").html(imagebox);
+                $("#certificate_content").val(data.certificate_content);
+                $("#certificateaddbtn").html("<img style='width: 100%' src='"+data.certificate_img+"'>");
+                $("#certificate_img").val(data.certificate_img);
+//                var imagebox="";
+//                imagebox+="<div id='certificateaddbtn'>"+
+//                        "<img src='"+data.src+"'>"+
+//                        "<span class='person_worksdelbtn' style='width: 120px;height: 120px;'>"+
+//                        "<svg class='icon' aria-hidden='true'>"+
+//                        "<use xlink:href='#icon-shanchu'></use>"+
+//                        "</svg>"+
+//                        "</span>"+
+//                        "</div>";
+//
+//                $("#certificatebox .person_worksbtn1").html(imagebox);
             }
         })
     });
@@ -1626,7 +1615,7 @@
         var _this=$(this);
         var data_id=_this.attr("data-id");
         $.ajax({
-            url:"",
+            url:"<?php  echo app_url('person/resume/honor_delete')?>",
             type:"post",
             data:{
                 data_id:data_id

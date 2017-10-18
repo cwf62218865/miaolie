@@ -47,31 +47,33 @@ elseif($op=="step2"){
     include wl_template('company/company_reg2');
 }
 elseif($op=="send_code"){
-    wl_load()->model('sms');
-    if(check_phone($_GPC['mobie'])){
-        $phone =$_GPC['mobie'];
-    }
-    if(!$_SESSION['last_sendtime'])
-    {
-        $_SESSION['phone_code']=mt_rand(1000,9999);
-        $_SESSION['last_sendtime']=time();
-        if(sendSms($phone,$_SESSION['phone_code'])){
-            call_back(1,"ok");
-        }
-    }
-    else
-    {
-        if ( (time() - $_SESSION['last_sendtime']) >50 )
-        {
-            $_SESSION['phone_code']=mt_rand(1000,9999);
-            $_SESSION['last_sendtime']=time();
-            if(sendSms($phone,$_SESSION['phone_code'])){
-                call_back(1,"ok");
-            }
-        }else{
-            return false;
-        }
-    }
+    send_codes($_POST['mobie']);
+//    var_dump($_POST);exit();
+//    wl_load()->model('sms');
+//    if(check_phone($_GPC['mobie'])){
+//        $phone =$_GPC['mobie'];
+//    }
+//    if(!$_SESSION['last_sendtime'])
+//    {
+//        $_SESSION['phone_code']=mt_rand(1000,9999);
+//        $_SESSION['last_sendtime']=time();
+//        if(sendSms($phone,$_SESSION['phone_code'])){
+//            call_back(1,"ok");
+//        }
+//    }
+//    else
+//    {
+//        if ( (time() - $_SESSION['last_sendtime']) >50 )
+//        {
+//            $_SESSION['phone_code']=mt_rand(1000,9999);
+//            $_SESSION['last_sendtime']=time();
+//            if(sendSms($phone,$_SESSION['phone_code'])){
+//                call_back(1,"ok");
+//            }
+//        }else{
+//            return false;
+//        }
+//    }
 }
 
 //手机端图片上传页面
@@ -196,7 +198,7 @@ elseif ($op=="step3_save"){
     $data['nature'] =check_pasre($_POST['company_property'],"请选择公司性质");
     $data['number'] =check_pasre($_POST['company_scale'],"请选择公司规模");
     $data['industry'] =check_pasre($_POST['company_industry'],"请选择所处行业");
-    $data['district'] =check_pasre($_POST['company_city'],"请选择所处地区");
+    $data['city'] =check_pasre($_POST['company_city'],"请选择所处地区");
     $data['slogan'] =check_pasre($_POST['slogan'],"slogan不能为空");
     $data['tag'] =check_pasre($_POST['welfare'],"请至少选择一个福利标签");
     $r = pdo_update(WL."company_profile",$data,array('uid'=>$_SESSION['uid']));

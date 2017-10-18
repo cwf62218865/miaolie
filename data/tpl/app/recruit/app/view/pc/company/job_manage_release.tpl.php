@@ -26,9 +26,9 @@
                         <use xlink:href="#icon-xiala"></use>
                     </svg>
                     <div class="my_joblist">
-                        <p class="option_select">新媒体编辑</p>
-                        <p class="option_select">Java工程师</p>
-                        <p class="option_select">销售总监</p>
+                        <?php  if(is_array($jobs)) { foreach($jobs as $list) { ?>
+                        <p class="option_select"><?php  echo $list['jobs_name'];?></p>
+                        <?php  } } ?>
                     </div>
                 </div>
 
@@ -186,7 +186,7 @@
                             <span class="font999 resume_msg_name">薪资待遇</span>
                             <div class=" relative general-select " style="float: none">
                                 <label class="general-input relative " style="float: none">
-                                    <input type="text" readonly="" id="salarychoice"  name="salary" value="<?php  if($jobs['wage_min'] && $jobs['wage_max']) { ?><?php  echo $jobs['wage_min']?>-<?php  echo $jobs['wage_max']?><?php  } else { ?>面谈<?php  } ?>">
+                                    <input type="text"  id="salarychoice"  name="salary" value="<?php  if($jobs['wage_min'] && $jobs['wage_max']) { ?><?php  echo $jobs['wage_min']?>-<?php  echo $jobs['wage_max']?><?php  } else { ?>面谈<?php  } ?>">
                                     <svg class="icon inputicon" aria-hidden="true">
                                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xiala" class="colorbbb"></use>
                                     </svg>

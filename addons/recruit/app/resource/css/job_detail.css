@@ -128,6 +128,19 @@
     margin-top: -20px;
     cursor: pointer;
 }
+.delivery_resume1{
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    width: 138px;
+    text-align: center;
+    border: 1px solid #bbb;
+    background-color: #eef5f7;
+    border-radius: 4px;
+    color: #bbb;
+    float: right;
+    margin-top: -20px;
+}
 .delivery_resume:hover{
     background-color: #09c;
     color: #fff;

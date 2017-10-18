@@ -41,6 +41,7 @@ elseif ($op=="send_jobs"){
 //        $r = insert_table($data,WL."jobs");
     }else{
         $data['addtime'] =time();
+        $data['updatetime'] =time();
         $r = insert_table($data,WL."jobs");
     }
     if($r){

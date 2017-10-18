@@ -124,11 +124,10 @@
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xiala" class="colorbbb"></use>
                         </svg>
                     </label>
-                    <div class="options" style="height: 0px;">
-                        <div class="select-option"><span>北上广地区</span></div>
-                        <div class="select-option"><span>二线城市</span></div>
-                        <div class="select-option"><span>三线城市</span> </div>
-                        <div class="select-option"><span>乡镇地区</span> </div>
+                    <div class="options"  style="height: 0px;">
+                        <div id="city" style="height: 185px;overflow-y: auto;overflow-x: hidden">
+
+                        </div>
                     </div>
                 </div>
                 <div class="chec_tip1">
@@ -179,6 +178,7 @@
 </body>
 <script src="<?php echo WL_URL_ARES;?>js/jquery.js" rel="script"></script>
 <script src="<?php echo WL_URL_ARES;?>js/iconfont.js" rel="script"></script>
+<script src="<?php echo WL_URL_ARES;?>js/area.js" rel="script"></script>
 <script src="<?php echo WL_URL_ARES;?>js/control.js" rel="script"></script>
 <script src="<?php echo WL_URL_ARES;?>js/company_reg3.js" rel="script"></script>
 <script>

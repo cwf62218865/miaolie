@@ -69,7 +69,7 @@
 
                <!--公司基本信息-->
                <div id="basic_msg">
-                   <span class="company_logo"><img src="<?php echo WL_URL_ARES;?>images/qiyelogo.png"></span>
+                   <span class="company_logo"><img src="<?php  echo $company['headimgurl']?>"></span>
                    <div class="company_basacmsg">
                        <div class="relative">
                            <span class="company_name"><?php  echo $company['companyname']?></span>
@@ -100,7 +100,7 @@
                    <!--上传logo-->
                    <div style="margin-top: 80px;width: 100%;text-align: center">
                    <span class="company_logo_upload">
-                       <!--<img src="<?php echo WL_URL_ARES;?>images/person_img.png">-->
+                       <!--<img src="<?php  echo $company['headimgurl']?>">-->
                        <span>
                            <svg class="icon" aria-hidden="true">
                                <use  xlink:href="#icon-xiangji"></use>

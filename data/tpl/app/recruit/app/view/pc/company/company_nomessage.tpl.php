@@ -50,9 +50,12 @@
                        </span>
                    </span>
                    <div class="fontbbb" style="margin-top: 16px">*Logo尺寸要求 200*200，图片大小在2M以内</div>
-                   <form id="choosefile2" enctype="multipart/form-data">
-                    <input type="file" id="company_logo"  accept="image/*"  style="display: none">
-                   </form>
+
+
+                       <input type="file" id="company_logo"  accept="image/*"  style="display: none">
+
+
+
                    <input type="text" name="company_logo" style="display: none">
                </div>
 
@@ -399,14 +402,20 @@ $("#company_logo").on("change",function(){
                 hint("error","Logo尺寸要求 200*200，图片大小在2M以内。");
                setTimeout(function(){$(".promptbox").remove()},2000);
             }else{
-                var updatafile = new FormData($("#choosefile2")[0]);
+                var updatafile = new FormData();
+                updatafile.append('file', $("#company_logo")[0].files[0]);
                 $.ajax({
-                    url:"<?php  echo app_url('person/resume/works_upload')?>",
+                    url:"<?php  echo app_url('company/company_profile/hedimgurl_upload')?>",
                     type:"post",
+                    processData: false,
+                    cache: false,
+                    contentType: false,
+
                     data:updatafile,
                     success:function(data1){
-                        var data1=JSON.parse(data1);
+                       var data1=JSON.parse(data1);
                         if(data1.status==1){
+                            alert(222)
                             if($(".company_logo_upload img").length==0){
                                 $(".company_logo_upload span").before("<img src="+data1.content+">");
                             }else{

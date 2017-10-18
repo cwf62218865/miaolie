@@ -533,6 +533,7 @@
     line-height:120px;
     font-size: 160px;
     cursor: pointer;
+    overflow: hidden;
 }
 #certificateaddbtn .icon{
     position: absolute;

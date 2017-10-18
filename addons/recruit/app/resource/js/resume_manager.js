@@ -342,7 +342,11 @@ $("#addcertificatebtn").on("click",function(){
     $("#certificatebox label").css("border-color","#f5f5f5");
     $(".formtip").remove();
 
+    $("#certificate_content").val("");
     $("#certificate_contentinput").val("");
+    $("#certificateaddbtn").html('<svg class="icon" aria-hidden="true">\n' +
+        '                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-shangchuan"></use>\n' +
+        '                                </svg>');
     $("#certificate_id").val("");
     $("#certificate").hide();
     $("#addcertificatebtn").hide();

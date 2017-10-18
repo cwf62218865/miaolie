@@ -433,5 +433,9 @@ $(function () {
         var template_id = $(".biankuang").parent().parent().attr('data-id');
         window.location.href = "{php echo app_url('resume/index')}"+"template_id="+template_id;
     })
+
+    $("#exit_view").click(function () {
+        window.history.go(-1);
+    })
 </script>
 </html>

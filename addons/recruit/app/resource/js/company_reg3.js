@@ -63,6 +63,13 @@ $(document).ready(function(){
             _this.closest("div").nextAll(".chec_tip1").eq(0).find(".right_align").html("");
         }
     });
+    var  area=dsy.Items[0];
+    var city="";
+    for(var i=0;i<area.length;i++){
+        city+="<div class='select-option'><span>"+area[i]+"</span></div>"
+    };
+    $('#city').html(city);
+
 
 
 })

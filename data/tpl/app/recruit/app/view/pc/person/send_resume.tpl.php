@@ -25,7 +25,7 @@
                         <input type="checkbox" name="like" value="">
                         <div class="checkboxbox">
                             <svg class="icon iconfont color1aa ico_right">
-                                <use xlink:href="#icon-zhengque1"></use>
+                                <use xlink:href=""></use>
                             </svg>
                         </div>
                     </label>
@@ -35,11 +35,11 @@
             <div class="list_content">
                 <?php  if(is_array($apply_jobs)) { foreach($apply_jobs as $list) { ?>
                 <?php  if($list['direction']==2) { ?>
-                <div class="list_item <?php  if($list['status']<>3) { ?>pass<?php  } ?>" <?php  if($list['status']<>3) { ?>style="display:none;"<?php  } ?>>
+                <div class="list_item <?php  if($list['status']<>3) { ?>pass<?php  } ?>" >
                     <div class="item_con">
                         <div class="hang1">
-                            <a class="jobname nowrap"><?php  echo $list['jobs_name']?></a>
-                            <a class="salary"><?php  echo $list['wage_min']?>-<?php  echo $list['wage_max']?></a>
+                            <a class="jobname nowrap" href="<?php  echo app_url('member/index/jobs_detail',array('jobs_id'=>$list['id']))?>"><?php  echo $list['jobs_name']?></a>
+                            <a class="salary"><?php  echo $list['wage_min']?>-<?php  echo $list['wage_max']?>k</a>
                         </div>
                         <div class="hang2">
                             <a class="company nowrap"><?php  echo $list['companyname']?></a>
@@ -47,7 +47,7 @@
                             <span class="date"><?php  echo date("Y-m-d",$list['createtime'])?></span>
                         </div>
                         <div class="hang3">
-                            <?php  if(is_array(explode(",",$list['tag']))) { foreach(explode(",",$list['tag']) as $value) { ?>
+                            <?php  if(is_array(array_filter(explode(",",$list['tag'])))) { foreach(array_filter(explode(",",$list['tag'])) as $value) { ?>
                             <span class="fuli"><?php  echo $value?></span>
                             <?php  } } ?>
                         </div>
@@ -83,7 +83,7 @@
                 </div>
                 <?php  } ?>
                 <?php  } } ?>
-                <div class="morejob">发现更多好职位>></div>
+                <div class="morejob apply_more">发现更多好职位>></div>
             </div>
             <!--面试邀请start---------------------------------------------------------------------------->
             <div class="resume_content">
@@ -252,6 +252,8 @@
 
 <script>
     $(function () {
+        var send_resume_page = 1;
+        var invite_page = 1;
         send_resume();
         // 百度地图API功能
         var map = new BMap.Map("allmap");    // 创建Map实例
@@ -331,6 +333,21 @@
             }
         })
 
+        $(".apply_more").click(function () {
+            $.ajax({
+                type:"post",
+                url:"<?php  echo app_url('person/index/send_resume_ajax')?>",
+                data:{
+                    page:send_resume_page
+                },
+                success:function (data) {
+                    var data = JSON.parse(data);
+                    if(data.status==1){
+                        send_resume_page +=1;
+                    }
+                }
+            })
+        })
     })
 </script>
 </html>

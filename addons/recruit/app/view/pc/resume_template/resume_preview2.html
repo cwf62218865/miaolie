@@ -21,6 +21,30 @@
         .swiper-wrapper{
             padding-left: 10px;
         }
+        @media print {
+            h1 {
+                color: #000;
+                background: none;
+            }
+
+
+            nav, aside {
+                display: none;
+            }
+
+
+            body, article {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+
+            @page {
+                margin: 2cm;
+            }
+        }
+
     </style>
 </head>
 <body bgcolor="#f4f4f4">
@@ -61,7 +85,7 @@
 </div>
 <!--startprint1-->
 <div class="width1200 p1content preview">
-    <div class="p1_left">
+    <div class="p1_left"  id="print">
 
         <div class="con_list">
             <!--头像-->
@@ -376,10 +400,13 @@
 <script src="{WL_URL_ARES}js/swiper.js" rel="script"></script>
 <script src="{WL_URL_ARES}js/jquery.js" rel="script"></script>
 <script src="{WL_URL_ARES}js/iconfont.js" rel="script"></script>
-
+<script src="{WL_URL_ARES}js/jquery.jqprint-0.3.js" rel="script"></script>
 <script src="{WL_URL_ARES}js/formdata.js" rel="script"></script>
 <script>
     $(document).ready(function () {
+        function aa(){
+            $("#print").jqprint();
+        }
 
         var mySwiper = new Swiper ('.swiper-container', {
             direction: 'horizontal',
@@ -391,15 +418,8 @@
         })
         $("#modal_box").hide().css("opacity",1);
 
-        $("#print_resume").click(function () {
-            bdhtml=window.document.body.innerHTML;//获取当前页的html代码
-            sprnstr="<!--startprint1-->";//设置打印开始区域
-            eprnstr="<!--endprint1-->";//设置打印结束区域
-            prnhtml=bdhtml.substring(bdhtml.indexOf(sprnstr)+18); //从开始代码向后取html
-            prnhtmlprnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));//从结束代码向前取html
-            window.document.body.innerHTML=prnhtml;
-            window.print();
-            window.document.body.innerHTML=bdhtml;
+        $("#print_resume").on("click",function () {
+            aa();
         })
 
     })
@@ -443,6 +463,10 @@ $(function () {
                 }
             }
         })
+    })
+
+    $("#exit_view").click(function () {
+        window.history.go(-1);
     })
 </script>
 </html>

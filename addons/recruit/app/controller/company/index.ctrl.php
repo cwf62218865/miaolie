@@ -11,6 +11,7 @@ elseif ($op=="job_manage"){
     include wl_template('company/job_manage');
 }
 elseif ($op=="job_manage_release"){
+    $jobs = m('jobs')->getall_jobs($_SESSION['uid']);
     if($_GPC['job_id']){
         $jobs = pdo_fetch("select * from ".tablename(WL."jobs")." where id=".$_GPC['job_id']." and uid=".$_SESSION['uid']);
 //        var_dump($jobs);exit();

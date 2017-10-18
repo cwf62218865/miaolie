@@ -103,7 +103,7 @@
                         {loop explode(',',$jobs['tag']) $list}
                         <span class="welfare_label">{$list}</span>
                         {/loop}
-                        <span class="delivery_resume" data-id="{php echo $jobs['id']}">投递简历</span>
+                        <span class="{if $jobs_apply}delivery_resume1{else}delivery_resume{/if}" data-id="{php echo $jobs['id']}">{if $jobs_apply}已投递{else}投递简历{/if}</span>
                     </div>
 
 
@@ -446,7 +446,10 @@ $(function () {
                 uid:uid
             },
             success:function (data) {
-
+                var data=JSON.parse(data);
+                if(data.status==1){
+                    $(".delivery_resume").html("已投递").removeClass("delivery_resume").addClass("delivery_resume1").unbind("click");
+                }
             }
         })
     })

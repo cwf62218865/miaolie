@@ -111,27 +111,33 @@
                     <span class="select_item1 magl20">最新</span>
                     <label class="yemabtn">
                         <span class="magr50 hangver">
-                            <label class="current_page">1</label>
+                            <label class="current_page" id="current_page">1</label>
                             /
-                            <label class="total_page">11</label>
+                            <label class="total_page"><?php  echo ceil($jobs_count/6)?></label>
                         </span>
-                        <svg class="icon yema slected">
+                        <span class="yema">
+                            <svg class="icon ">
                             <use xlink:href="#icon-zuojiantouxi"></use>
                         </svg>
-                        <svg class="icon yema">
+                        </span>
+
+                        <span class="yema slected">
+                            <svg class="icon  ">
                             <use xlink:href="#icon-youjiantouxi"></use>
                         </svg>
+                        </span>
+
                     </label>
                 </div>
             </div>
 
             <!--职位列表start---------------------------------------------------------------------------->
-            <div class="resume_content" style="display: block">
+            <div class="resume_content" style="display: inline-block;height: 1116px">
                 <?php  if(is_array($jobs)) { foreach($jobs as $list) { ?>
                 <div class="list_item">
                     <div class="item_con">
                         <div class="hang1">
-                            <label class="jobname nowrap"><?php  echo $list['jobs_name'];?></label>
+                            <a class="jobname nowrap" href="<?php  echo app_url('member/index/jobs_detail',array('jobs_id'=>$list['id']))?>"><?php  echo $list['jobs_name'];?></a>
                             <label class="salary"><?php  echo $list['wage_min'];?>-<?php  echo $list['wage_max'];?>K</label>
                         </div>
                         <div class="hang2">
@@ -146,31 +152,23 @@
                         <div class="xian1"></div>
                         <div class="companylogo">
                             <div class="logo">
-                                <img src="<?php echo WL_URL_ARES;?>images/qiyelogo.png">
+                                <img src="<?php  echo $list['headimgurl'];?>">
                             </div>
                             <div class="companyname">
                                 <p class="name"><?php  echo $list['companyname'];?></p>
-                                <p class="shuxin">昨天刷新</p>
+                                <p class="shuxin"><?php  echo date('Y-m-d',$list['updatetime'])?></p>
                             </div>
                         </div>
                     </div>
-                    <div class="review_statas">
-                        <div class="toudijianli">投递简历</div>
+                    <div class="review_statas" data-id="<?php  echo $list['uid'];?>">
+                        <div class="<?php  if($list['post_status']=='已投递') { ?>toudijianli1<?php  } else { ?>toudijianli<?php  } ?>" data-id="<?php  echo $list['id'];?>"><?php  echo $list['post_status'];?></div>
                     </div>
                 </div>
                 <?php  } } ?>
-                <div class="pages_btn">
-                    <span class="pre_page">上一页</span>
-                    <span class="page select">1</span>
-                    <span class="page">2</span>
-                    <span class="page">3</span>
-                    <span class="page">4</span>
-                    <span class="page">5</span>
-                    <span class="page">6</span>
-                    <span class="page">…</span>
-                    <span class="page">15</span>
-                    <span class="next_page">下一页</span>
-                </div>
+
+            </div>
+            <div id="pages_btnbox">
+
             </div>
             <!--职位列表end---------------------------------------------------->
         </div>
@@ -263,27 +261,114 @@
 
 <script>
     $(function () {
+        var option={
+            job_name:"",
+            job_address:"",
+            job_education:"",
+            job_nature:"",
+            job_money:"",
+            job_order:"",
+            page:1
+        };//搜索职位的相关数据
 
 
-        $(".page").click(function () {
-            var page = $(this).html();
+        $("body").on("click",".toudijianli",function () {
+            var _this = $(this);
+            var data_id = $(this).attr('data-id');
+            var uid = $(this).parent().attr('data-id');
             $.ajax({
                 type:"post",
-                url:"<?php  echo app_url('member/index/search_jobs_ajax')?>",
+                url:"<?php  echo app_url('person/index/post_resume')?>",
                 data:{
-                    page:page
+                    data_id:data_id,
+                    uid:uid
                 },
                 success:function (data) {
                     var data = JSON.parse(data);
                     if(data.status==1){
+                        hint("success","投递成功");
+                        setTimeout(function(){$(".promptbox").remove()},1000);
+                        _this.html("已投递").addClass("toudijianli1").removeClass("toudijianli");
+                    }else{
+                        hint("success","投递成功");
+                        setTimeout(function(){$(".promptbox").remove()},1000);
+                        _this.html("已投递").addClass("toudijianli1").removeClass("toudijianli");
+                    }
+                }
+            })
+        });
+
+        $("#pages_btnbox").html(pages(1,"<?php  echo ceil($jobs_count/6)?>"));
+
+        $("body").on("click",".page",function () {
+            option.page = $(this).html();
+            layer(option);
+        });
+
+        $("body").on("click",".pre_page",function () {
+            if($(this).hasClass("no_page")){
+                return;
+            }
+            option.page = parseInt(option.page)-1;
+            layer(option);
+        });
+        $("body").on("click",".next_page",function () {
+            if($(this).hasClass("no_page")){
+                return;
+            }
+            option.page = parseInt(option.page)+1;
+            layer(option)
+        });
+
+        $(".yemabtn .yema").eq(0).on("click",function () {
+            if($(this).hasClass("slected")){
+                option.page =  parseInt(option.page)-1;
+                layer(option);
+            }else{
+                return;
+            }
+
+        });
+        $(".yemabtn .yema").eq(1).on("click",function () {
+            if($(this).hasClass("slected")){
+                option.page =  parseInt(option.page)+1;
+                layer(option);
+            }else{
+                return;
+            }
+
+        })
+
+//        分页请求
+        function  layer(option) {
+            $.ajax({
+                type:"post",
+                url:"<?php  echo app_url('member/index/search_jobs_ajax')?>",
+                data:{
+                    data:option
+                },
+                success:function (data) {
+                    var data = JSON.parse(data);
+                    if(data.status==1){
+                        $("#current_page").html(option.page);
                         $(".list_item").remove();
-                        $(".pages_btn").before(data.content);
-                        $(".pages_btn").html(pages(page,15));
+                        $(".resume_content").html(data.content);
+                        $("#pages_btnbox").html(pages(option.page,"<?php  echo ceil($jobs_count/6)?>"));
+                        if(option.page==1){
+                            $(".yemabtn .yema").eq(0).removeClass("slected");
+                            $(".yemabtn .yema").eq(1).addClass("slected");
+                        }else if(option.page=="<?php  echo ceil($jobs_count/6)?>"){
+                            $(".yemabtn .yema").eq(0).addClass("slected");
+                            $(".yemabtn .yema").eq(1).removeClass("slected");
+                        }else{
+                            $(".yemabtn .yema").eq(0).addClass("slected");
+                            $(".yemabtn .yema").eq(1).addClass("slected");
+                        }
                     }
 
                 }
             })
-        })
+        }
         //行政区选择
         $("body").on("click",".district_list .city_item",function () {
             $(".district_list .city_item").removeClass("city_select");

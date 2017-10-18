@@ -25,9 +25,9 @@
                         <use xlink:href="#icon-xiala"></use>
                     </svg>
                     <div class="my_joblist">
-                        <p class="option_select">新媒体编辑</p>
-                        <p class="option_select">Java工程师</p>
-                        <p class="option_select">销售总监</p>
+                        {loop $jobs $list}
+                        <p class="option_select">{$list['jobs_name']}</p>
+                       {/loop}
                     </div>
                 </div>
 
@@ -223,35 +223,47 @@
 <script>
     $(".stop_job").on("click",function(){
         var _this=$(this);
-        var stop=stop_action("停止招聘","停止招聘将无法收到该职位的简历，确定要删除吗？","再考虑下","确定终止",function(data){
-            if(data){
-                var data_id=_this.attr("data-id");
-                $.ajax({
-                    url:"{php echo app_url('company/jobs/stop_job')}",
-                    type:"post",
-                    data:{
-                        data_id:data_id
-                    },
-                    success:function(data1){
-                        var data1=JSON.parse(data1);
-                        if(data1.status==1){
-                            $(".modalbox").hide();
-                            var stopbox=_this.closest(".list_item");
-                            stopbox.find(".jobname").css("color","#999").append("<span class='font999'>（已停止招聘）</span>");
-                            stopbox.find(".salary").css("color","#999");
-                            stopbox.find(".received_resumemsg_num").css("color","#999");
-                            stopbox.find(".received_resume").addClass("received_resume1").removeClass("received_resume");
-                            stopbox.find(".left_actionbtn").html("重新发布");
-                            stopbox.find(".right_actionbtn").html("删除职位").addClass("del_job").removeClass("stop_job");
+        var data_id=_this.attr("data-id");
+        if(_this.hasClass("del_job")){
+            deletejob(this);
+        }else{
+            var stop=stop_action("停止招聘","停止招聘将无法收到该职位的简历，确定要删除吗？","再考虑下","确定终止",function(data){
+                if(data){
+                    $.ajax({
+                        url:"{php echo app_url('company/jobs/stop_job')}",
+                        type:"post",
+                        data:{
+                            data_id:data_id
+                        },
+                        success:function(data1){
+                            var data1=JSON.parse(data1);
+                            if(data1.status==1){
+                                $(".modalbox").hide();
+                                var stopbox=_this.closest(".list_item");
+                                stopbox.find(".jobname").css("color","#999").append("<span class='font999'>（已停止招聘）</span>");
+                                stopbox.find(".salary").css("color","#999");
+                                stopbox.find(".received_resumemsg_num").css("color","#999");
+                                stopbox.find(".received_resume").addClass("received_resume1").removeClass("received_resume");
+                                stopbox.find(".left_actionbtn").html("重新发布");
+                                stopbox.find(".right_actionbtn").html("删除职位").addClass("del_job").removeClass("stop_job");
+                            }
                         }
-                    }
-                })
-            }
-        });
+                    })
+                }
+            });
+        }
+
     })
 
+
+
     $(".del_job").on("click",function(){
-        var _this=$(this);
+        deletejob(this);
+    });
+
+
+    function deletejob(obj){
+        var _this=$(obj);
         var stop=stop_action("删除职位","删除职位后。。。，确定要删除吗？","再考虑下","确定删除",function(data){
             if(data){
                 var data_id=_this.attr("data-id");
@@ -271,7 +283,7 @@
                 })
             }
         });
-    })
+    }
 
 
 </script>
