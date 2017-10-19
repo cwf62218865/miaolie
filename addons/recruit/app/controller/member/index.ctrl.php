@@ -241,6 +241,7 @@ elseif ($op=="add"){
 
 //公司详情页
 elseif($op=="company_detail"){
+
     if($_GPC['company_id']) {
         $company = pdo_fetch("select * from ".tablename(WL."company_profile")." where id=".$_GPC['company_id']);
         include wl_template("member/company_pages");
@@ -319,6 +320,12 @@ elseif ($op=="search_jobs_ajax"){
     }
 }
 
+
+elseif ($op=="show_map"){
+    $retoate_x = $_GPC['retoate_x'];
+    $retoate_y = $_GPC['retoate_y'];
+    include wl_template("common/map");exit();
+}
 
 if(empty($_SESSION['mid'])){
     header("location:".app_url("member/index/index"));

@@ -42,7 +42,7 @@
                             <a class="salary"><?php  echo $list['wage_min']?>-<?php  echo $list['wage_max']?>k</a>
                         </div>
                         <div class="hang2">
-                            <a class="company nowrap"><?php  echo $list['companyname']?></a>
+                            <a class="company nowrap" href="<?php  echo app_url('member/index/company_detail',array('company_id'=>$list['uid']))?>"><?php  echo $list['companyname']?></a>
                             <span class="address nowrap"><?php  echo $list['city']?></span>
                             <span class="date"><?php  echo date("Y-m-d",$list['createtime'])?></span>
                         </div>
@@ -76,7 +76,7 @@
                                     </svg>
                                     <span>地址：<?php  echo $list['interview']['address']?></span>
                                 </p>
-                                <div class="btn_ditu"></div>
+                                <div class="btn_ditu" data-id="<?php  echo $list['retoate_x'].','.$list['retoate_y']?>" data-city="<?php  echo $list['city'];?>"></div>
                             <?php  } ?>
                         </div>
                     </div>
@@ -158,7 +158,7 @@
             <span class="modalclose">
                 <img src="<?php echo WL_URL_ARES;?>images/close.png"/>
             </span>
-            <div class="ditu_content"  id="allmap"></div>
+            <iframe style="width: 550px;height: 430px;border: none;margin: 40px 50px"></iframe>
         </div>
     </div>
     <!--地图弹框end-->
@@ -255,12 +255,21 @@
         var send_resume_page = 1;
         var invite_page = 1;
         send_resume();
-        // 百度地图API功能
-        var map = new BMap.Map("allmap");    // 创建Map实例
-        map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
-        map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
-        map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
-        map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+        $("body").on("click",".btn_ditu",function () {
+            var points=$(this).attr("data-id").split(",");
+            $("iframe").attr("src","<?php  echo app_url('member/index/show_map')?>retoate_x="+points[0]+"&retoate_y="+points[1]);
+//            $.ajax({
+//                url:"<?php  echo app_url('member/index/show_map')?>",
+//                type:"data",
+//                data:{
+//                    retoate_x:points[0],
+//                    retoate_y:points[1]
+//                },
+//                success:function (data) {
+//                    $("iframe").attr("src","<?php  echo app_url('member/index/show_map')?>");
+//                }
+//            })
+        });
 
         var dataid="";
         $(".jujue").click(function () {
@@ -334,6 +343,7 @@
         })
 
         $(".apply_more").click(function () {
+            var _this = $(this);
             $.ajax({
                 type:"post",
                 url:"<?php  echo app_url('person/index/send_resume_ajax')?>",
@@ -344,6 +354,7 @@
                     var data = JSON.parse(data);
                     if(data.status==1){
                         send_resume_page +=1;
+                        _this.before(data.content);
                     }
                 }
             })

@@ -24,7 +24,7 @@
                         <input type="checkbox" name="like" value="">
                         <div class="checkboxbox">
                             <svg class="icon iconfont color1aa ico_right">
-                                <use xlink:href="#icon-zhengque1"></use>
+                                <use xlink:href=""></use>
                             </svg>
                         </div>
                     </label>
@@ -55,7 +55,7 @@
             <div class="list_content">
                 <?php  if(is_array($received_resume)) { foreach($received_resume as $list) { ?>
                 <?php  if($list['status']<1) { ?>
-                <div class="list_item <?php  if($list['status']==-1) { ?>refuse<?php  } ?>" data-id="<?php  echo $list['apply_id']?>" <?php  if($list['status']==-1) { ?>style="display:none;"<?php  } ?>>
+                <div class="list_item <?php  if($list['status']==-1) { ?>refuse<?php  } ?>" data-id="<?php  echo $list['apply_id']?>" >
                     <div class="item_con">
                         <a class="touxiang_pic"  href="<?php  echo app_url('resume/index',array('uid'=>$list['uid']))?>" target="_blank">
                             <img src="<?php  echo $list['headimgurl']?>" style="width: 100px;"/>
@@ -99,8 +99,12 @@
                         <?php  } else { ?>
                             <div class="tongyi1 agree_review" data-id="<?php  echo $list['apply_id']?>">同意面试</div>
                             <div class="jujue1 refuse_review" data-id="<?php  echo $list['apply_id']?>">拒绝面试</div>
-                            <div class="jujue1 shoucang_resume" data-id="<?php  echo $list['apply_id']?>">收藏简历</div>
-                       <?php  } ?>
+                            <?php  if($list['collect_resume']) { ?>
+                            <div class="jujue1 shoucangbtn shoucang_resume" data-id="<?php  echo $list['apply_id']?>">已收藏</div>
+                            <?php  } else { ?>
+                            <div class="jujue1 shoucangbtn shoucang_resume" data-id="<?php  echo $list['apply_id']?>">收藏简历</div>
+                            <?php  } ?>
+                        <?php  } ?>
                     </div>
                 </div>
                 <?php  } ?>
@@ -299,7 +303,7 @@
     })
 
     //取消收藏
-    $(".jujue").click(function () {
+    $("body").on("click",".jujue",function () {
         var _this = $(this);
         $.ajax({
             type:"post",
@@ -317,9 +321,9 @@
             }
         })
     })
-    
+
     //面试邀请
-    $("#send_review").click(function () {
+    $("body").on("click","#send_review",function () {
         var reviewtime=$("#review_time").val();
         var contacts_name=$("#contacts_name").val();
         var contacts_tel=$("#contacts_tel").val();
@@ -389,22 +393,46 @@
     })
 
 
+    //拒绝面试
+
+    $("body").on("click",".refuse_review",function () {
+        var _this = $(this);
+        $.ajax({
+            type:"post",
+            url:"<?php  echo app_url('company/resume/refuse_review')?>",
+            data:{
+                apply_id:$(this).attr('data-id')
+            },
+            success:function (data) {
+                var data = JSON.parse(data);
+                if(data.status==1){
+                    _this.closest(".review_statas").html("<div class='jujuestatus cur' data-id='1'>已拒绝面试</div>");
+
+                }
+            }
+        })
+    })
+
+
     //收藏备注
-    $("#shoucang").click(function () {
+    $("body").on("click","#shoucang",function () {
         var item=$(this).closest("#beizhubox");
         var beizhu=item.find(".scbz_input").val();
         var data_flag=item.attr("data-id");
-
-        var item=$(this).closest("")
         if(beizhu==""){
             alert("请填写备注！")
             return;
         }
         $("#beizhubox").hide();
-        var lists=$(".resume_content .list_item");
+        var lists=$(".list_content .list_item");
+
         lists.each(function () {
             if($(this).attr("data-id")==data_flag){
-                $(this).find(".beizhu_content").val(beizhu);
+//               $(this).find(".beizhu_content").val(beizhu);
+                var states=$(this).find(".shoucangbtn");
+                states.html("已收藏");
+                states.removeClass("shoucang_resume");
+                states.addClass("statussc");
             }
         })
 

@@ -34,49 +34,71 @@ elseif ($op=="send_resume"){
 elseif ($op=="send_resume_ajax"){
     if($_POST['page']){
         $apply_jobs = m("resume")->jobs_apply($_SESSION['uid'],$_POST['page']);
+
         foreach ($apply_jobs as $list){
-            $html .= "<div class=\"list_item \">
+             $tag = "";
+             foreach (array_filter(explode(",",$list['tag'])) as $li){
+                 $tag .="<span class=\"fuli\">$li</span>";
+             }
+
+            $status = "";
+            if ($list['status']==0){
+                 $status = "<div class=\"status1\">HR未查看/待沟通</div>";
+            }elseif ($list['status']==1){
+                $status = "<div class=\"status2\">HR已查看</div>";
+            }elseif ($list['status']==3){
+                $status = "<p class=\"time\">
+                                    <svg class=\"icon icon_time\" aria-hidden=\"true\">
+                                        <use xlink:href=\"#icon-shijian\"></use>
+                                    </svg>
+                                    <span>时间：{$list['interview']['interview_time']}</span>
+                                </p>
+                                <p class=\"review_tel\">
+                                    <svg class=\"icon icon_tel\" aria-hidden=\"true\">
+                                        <use xlink:href=\"#icon-lianxiren\"></use>
+                                    </svg>
+                                    <span>联系人：{$list['interview']['linker']}</span>
+                                </p>
+                                <p class=\"review_address\">
+                                    <svg class=\"icon icon_address\" aria-hidden=\"true\">
+                                        <use xlink:href=\"#icon-didian\"></use>
+                                    </svg>
+                                    <span>地址：{$list['interview']['address']}</span>
+                                </p>
+                                <div class=\"btn_ditu\" data-id=\"{$list['retoate_x']}.','.{$list['retoate_y']}\" data-city='
+                {$list[city]}'></div>";
+            }
+
+
+            if($list['status']<>3){
+             $pass = "pass";
+            }else{
+                $pass = "";
+            }
+
+            $html .= "<div class=\"list_item ".$pass."\">
                     <div class=\"item_con\">
                         <div class=\"hang1\">
                             <a class=\"jobname nowrap\" href='".app_url('member/index/jobs_detail',array('jobs_id'=>$list['id']))."'>{$list['jobs_name']}</a>
                             <a class=\"salary\">{$list['wage_min']}-{$list['wage_max']}k</a>
                         </div>
                         <div class=\"hang2\">
-                            <a class=\"company nowrap\">{$list['companyname']}</a>
+                            <a class=\"company nowrap\" href='".app_url('member/index/company_detail',array('company_id'=>$list['uid']))."'>{$list['companyname']}</a>
                             <span class=\"address nowrap\">{$list['city']}</span>
                             <span class=\"date\">".date('Y-m-d',$list['updatetime'])."</span>
                         </div>
                         <div class=\"hang3\">
-                                                        <span class=\"fuli\">五险</span>
-                                                        <span class=\"fuli\">住房公积金</span>
-                                                    </div>
+                                {$tag}     
+                       </div>
                         <div class=\"xian1\"></div>
-                        <div class=\"status\">
-                                                            <p class=\"time\">
-                                    <svg class=\"icon icon_time\" aria-hidden=\"true\">
-                                        <use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#icon-shijian\"></use>
-                                    </svg>
-                                    <span>时间：10月13日 星期五 10:00</span>
-                                </p>
-                                <p class=\"review_tel\">
-                                    <svg class=\"icon icon_tel\" aria-hidden=\"true\">
-                                        <use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#icon-lianxiren\"></use>
-                                    </svg>
-                                    <span>联系人：张先生</span>
-                                </p>
-                                <p class=\"review_address\">
-                                    <svg class=\"icon icon_address\" aria-hidden=\"true\">
-                                        <use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#icon-didian\"></use>
-                                    </svg>
-                                    <span>地址：小小小</span>
-                                </p>
-                                <div class=\"btn_ditu\"></div>
-                                                    </div>
+                        <div class=\"status\">                           
+                                {$status}    
+                        </div>
                     </div>
                 </div>";
         }
 
-        call_back(1,$apply_jobs);
+        call_back(1,$html);
     }
 }
 

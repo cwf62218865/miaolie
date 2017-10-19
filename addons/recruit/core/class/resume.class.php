@@ -54,7 +54,8 @@ class resume{
      * 我投递过的职位
      */
     public function jobs_apply($uid,$page=1){
-        $limit = " limit ".(($page-1)*6).",6";
+        $limit = " limit ".($page*6).",6";
+//        echo "select * from ".tablename(WL."jobs_apply")." where direction=2 and puid=".$uid.$limit;exit();
         $jobs_apply = pdo_fetchall("select * from ".tablename(WL."jobs_apply")." where direction=2 and puid=".$uid.$limit);
 //        var_dump($jobs_apply);exit();
         $jobs = "";
@@ -69,6 +70,9 @@ class resume{
             }
             $company_profile = pdo_fetch("select * from ".tablename(WL."company_profile")." where uid=".$list['uid']);
             $jobs[$key]['tag'] = $company_profile['tag'];
+            $jobs[$key]['retoate_x'] = $company_profile['retoate_x'];
+            $jobs[$key]['retoate_y'] = $company_profile['retoate_y'];
+            $jobs[$key]['city'] = $company_profile['city'];
         }
         return $jobs;
     }

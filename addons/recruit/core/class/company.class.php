@@ -72,13 +72,17 @@ class company{
         if($jobs_id){
             $wheresql .=" and jobs_id=".$jobs_id;
         }
-        $limit = " limit ".$page.",4";
-        $resume_jobs = pdo_fetchall("select id,resume_id,jobs_id,status from ".tablename(WL.'jobs_apply').$wheresql.$limit);
+        $limit = " limit ".($page*6).",6";
+//        echo "select id,resume_id,jobs_id,status from ".tablename(WL.'jobs_apply').$wheresql;exit();
+        $resume_jobs = pdo_fetchall("select id,resume_id,jobs_id,uid,status from ".tablename(WL.'jobs_apply').$wheresql.$limit);
+//        $count = pdo_fetchcolumn("select COUNT(*) from ".tablename(WL.'jobs_apply').$wheresql);
 
         $resumes = "";
         foreach ($resume_jobs as $list){
             $resume = pdo_fetch("select * from ".tablename(WL.'resume')." where id=".$list['resume_id']);
             $job = pdo_fetch("select jobs_name from ".tablename(WL.'jobs')." where id=".$list['jobs_id']);
+            $resume['collect_resume'] = pdo_fetch("select id from ".tablename(WL.'collect_resume')." where uid=".$list['uid']." and resume_id=".$list['resume_id']);
+
             $resume['jobs_name'] = $job['jobs_name'];
             $resume['apply_id'] = $list['id'];
             $resume['status'] = $list['status'];

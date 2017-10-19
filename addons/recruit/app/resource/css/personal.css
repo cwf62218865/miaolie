@@ -732,6 +732,9 @@
 }
 .basic_xx{
     color: #666666;
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
 }
 .shoucang_beizhu{
     margin-top: 18px;
@@ -1145,5 +1148,8 @@
 }
 .resume_content .salarys{
     left: 0 !important;
+}
+.review_statas .statussc{
+    color: #bbbbbb;
 }
 
