@@ -1,11 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d49a2e6-1cf4-42be-ab5a-c79488e410fa" name="Default" comment="">
+    <list default="true" id="4d49a2e6-1cf4-42be-ab5a-c79488e410fa" name="Default" comment="bcl">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508231023661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508231390661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508231586661.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508231745661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508231795661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508232176661.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508232180661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508232185661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508232253661.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508232257661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508232360661.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508232363661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508232375661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508233423661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508233445661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508233457661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508233527661.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508233628661.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508233661661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508233698661.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508233817661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508233842661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508233846661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508233882661.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508234191661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508234202661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508235206661.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508235210661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508235213661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508235448661.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508235452661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508235455661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508235458661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508235461661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-17/1508235466661.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-18/1508288101661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-18/1508294590664.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-18/1508294594664.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/file/2017-10-18/1508294598664.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-17/1508231622661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-17/1508232874661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-17/1508232903661.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-17/1508233144661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-17/1508235125661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-17/1508235183661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-17/1508235428661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-17/1508235434661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-17/1508235561661.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-18/1508288148661.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-18/1508288413661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-18/1508288454661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-18/1508288521661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-18/1508288641661.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-18/1508288781661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-18/1508289231661.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-18/1508289947661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-18/1508289951661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-18/1508290294661.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-18/1508316983655.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-18/1508317009655.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-18/1508317053655.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addons/recruit/app/resource/temp/2017-10-18/1508317092655.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/logs/20171018.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/tpl/app/recruit/app/view/pc/common/map.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/tpl/app/recruit/app/view/pc/member/company_pages.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/tpl/app/recruit/app/view/pc/member/company_reg1.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/recruit/app/controller/member/person_register.ctrl.php" afterPath="$PROJECT_DIR$/addons/recruit/app/controller/member/person_register.ctrl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons/recruit/core/model/verify.mod.php" afterPath="$PROJECT_DIR$/addons/recruit/core/model/verify.mod.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/tpl/app/recruit/app/view/pc/company/job_manage_release.tpl.php" afterPath="$PROJECT_DIR$/data/tpl/app/recruit/app/view/pc/company/job_manage_release.tpl.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -399,109 +462,6 @@
               <item name="miaolie" type="b2602c69:ProjectViewProjectNode" />
               <item name="miaolie" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="miaolie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaolie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="addons" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="miaolie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaolie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="addons" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="recruit" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="miaolie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaolie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="addons" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="recruit" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="miaolie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaolie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="addons" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="recruit" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="miaolie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaolie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="addons" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="recruit" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="company" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="miaolie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaolie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="addons" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="recruit" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resume" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="miaolie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaolie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="addons" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="recruit" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="test" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="miaolie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaolie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="addons" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="recruit" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resource" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="miaolie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaolie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="addons" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="recruit" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="miaolie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaolie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="addons" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="recruit" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pc" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="miaolie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaolie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="addons" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="recruit" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pc" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="company" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="miaolie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaolie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="addons" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="recruit" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="miaolie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaolie" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="addons" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="recruit" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="class" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -550,7 +510,7 @@
       <workItem from="1508230781551" duration="5275000" />
       <workItem from="1508287159721" duration="29604000" />
       <workItem from="1508374129643" duration="15252000" />
-      <workItem from="1508460695733" duration="7314000" />
+      <workItem from="1508460695733" duration="7516000" />
     </task>
     <task id="LOCAL-00001" summary="11">
       <created>1508210136009</created>
@@ -608,23 +568,30 @@
       <option name="project" value="LOCAL" />
       <updated>1508394636429</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="bcl">
+      <created>1508468139091</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1508468139091</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71840000" />
+    <option name="totallyTimeSpent" value="72042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19402985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6088841" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34777898" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6088841" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -672,7 +639,8 @@
     <MESSAGE value="13:57" />
     <MESSAGE value="13:5711" />
     <MESSAGE value="11" />
-    <option name="LAST_COMMIT_MESSAGE" value="11" />
+    <MESSAGE value="bcl" />
+    <option name="LAST_COMMIT_MESSAGE" value="bcl" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

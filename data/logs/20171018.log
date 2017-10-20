@@ -1,0 +1,258 @@
+2017-10-18 10:32:50 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:33:52 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:35:01 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:35:16 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:35:24 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:35:52 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:35:57 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:36:07 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:36:17 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:36:24 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:36:30 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:36:55 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:36:59 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:38:04 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:39:00 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:39:18 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:40:55 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:41:34 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:41:39 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:42:13 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:42:15 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 10:42:55 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_company_profile` where uid=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/core/class/company.class.php; line: 24; <br />file: /addons/recruit/app/controller/member/company_register.ctrl.php; line: 6; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 11:25:10 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_jobs` order by open desc limit -4,4<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-4,4' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 189; <br />file: /framework/function/pdo.func.php; line: 44; <br />file: /addons/recruit/core/class/jobs.class.php; line: 25; <br />file: /addons/recruit/app/controller/member/index.ctrl.php; line: 272; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:28:05 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_jobs_apply` where jobs_id=35 and resume_id=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/person/index.ctrl.php; line: 74; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:28:13 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_jobs_apply` where jobs_id=35 and resume_id=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/person/index.ctrl.php; line: 74; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:28:17 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_jobs_apply` where jobs_id=35 and resume_id=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/person/index.ctrl.php; line: 74; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:28:19 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_jobs_apply` where jobs_id=35 and resume_id=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/person/index.ctrl.php; line: 74; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:28:20 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_jobs_apply` where jobs_id=35 and resume_id=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/person/index.ctrl.php; line: 74; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:28:55 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_jobs_apply` where jobs_id=35 and resume_id=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/person/index.ctrl.php; line: 74; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:29:24 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_jobs_apply` where jobs_id=35 and resume_id=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/person/index.ctrl.php; line: 74; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:31:12 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_jobs_apply` where jobs_id=35 and resume_id=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/person/index.ctrl.php; line: 74; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:31:29 SQL Error :
+------------
+String:
+SQL: <br/>select * from `ims_recruit_jobs_apply` where jobs_id=35 and resume_id=<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/person/index.ctrl.php; line: 74; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:34:03 SQL Error :
+------------
+String:
+SQL: <br/>select id from `ims_recruit_jobs_apply` jobs_id=35 and puid=655<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=35 and puid=655' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/member/index.ctrl.php; line: 256; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:34:46 SQL Error :
+------------
+String:
+SQL: <br/>select id from `ims_recruit_jobs_apply` jobs_id=35 and puid=655<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=35 and puid=655' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/member/index.ctrl.php; line: 256; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:37:26 SQL Error :
+------------
+String:
+SQL: <br/>select id from `ims_recruit_jobs_apply` jobs_id=35 and puid=655<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=35 and puid=655' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/member/index.ctrl.php; line: 256; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:38:13 SQL Error :
+------------
+String:
+SQL: <br/>select id from `ims_recruit_jobs_apply` jobs_id=35 and puid=661<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=35 and puid=661' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/member/index.ctrl.php; line: 256; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:38:34 SQL Error :
+------------
+String:
+SQL: <br/>select id from `ims_recruit_jobs_apply` jobs_id=43 and puid=661<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=43 and puid=661' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/member/index.ctrl.php; line: 256; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:38:39 SQL Error :
+------------
+String:
+SQL: <br/>select id from `ims_recruit_jobs_apply` jobs_id=43 and puid=661<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=43 and puid=661' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/member/index.ctrl.php; line: 256; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:38:56 SQL Error :
+------------
+String:
+SQL: <br/>select id from `ims_recruit_jobs_apply` jobs_id=43 and puid=661<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=43 and puid=661' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/member/index.ctrl.php; line: 256; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:38:58 SQL Error :
+------------
+String:
+SQL: <br/>select id from `ims_recruit_jobs_apply` jobs_id=43 and puid=661<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=43 and puid=661' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/member/index.ctrl.php; line: 256; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:39:39 SQL Error :
+------------
+String:
+SQL: <br/>select id from `ims_recruit_jobs_apply` jobs_id=43 and puid=661<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=43 and puid=661' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/member/index.ctrl.php; line: 256; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:39:40 SQL Error :
+------------
+String:
+SQL: <br/>select id from `ims_recruit_jobs_apply` jobs_id=43 and puid=661<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=43 and puid=661' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/member/index.ctrl.php; line: 256; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
+2017-10-18 17:39:59 SQL Error :
+------------
+String:
+SQL: <br/>select id from `ims_recruit_jobs_apply` jobs_id=43 and puid=661<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=43 and puid=661' at line 1<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 162; <br />file: /framework/function/pdo.func.php; line: 40; <br />file: /addons/recruit/app/controller/member/index.ctrl.php; line: 256; <br />file: /addons/recruit/app/index.php; line: 69; <br />file: /addons/recruit/site.php; line: 40; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/source/site/entry.ctrl.php; line: 81; <br />file: /app/index.php; line: 117; <br />
+
