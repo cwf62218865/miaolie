@@ -48,7 +48,10 @@ function send_codes($phone){
     wl_load()->model('sms');
     if(!$_SESSION['last_sendtime'])
     {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 26932ca576d025b11cf83b7043f298d6abaf0abd
         $_SESSION['phone_code']=mt_rand(1000,9999);
         $_SESSION['last_sendtime']=time();
         if(sendSms($phone,$_SESSION['phone_code'])){
