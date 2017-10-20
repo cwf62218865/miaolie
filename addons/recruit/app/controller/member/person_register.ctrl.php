@@ -32,6 +32,7 @@ if($op=="index"){
         call_back(1,"注册失败");
     }
 }elseif($op=="send_code"){
+
     send_codes($_POST['mobie']);
 }elseif ($op=="feelings"){
     if($_SESSION['utype']==1){
