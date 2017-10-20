@@ -138,7 +138,7 @@
                     <div class="item_con">
                         <div class="hang1">
                             <a class="jobname nowrap" href="<?php  echo app_url('member/index/jobs_detail',array('jobs_id'=>$list['id']))?>"><?php  echo $list['jobs_name'];?></a>
-                            <label class="salary"><?php  echo $list['wage_min'];?>-<?php  echo $list['wage_max'];?>K</label>
+                            <label class="salary nowrap"><?php  echo $list['wage_min'];?>-<?php  echo $list['wage_max'];?>K</label>
                         </div>
                         <div class="hang2">
                             <label class="experience nowrap"><?php  echo $list['experience'];?></label>
@@ -504,8 +504,6 @@
         for(var i=0;i<area.length;i++){
             city.push(dsy.Items['0_'+i]);
         }
-
-        console.log(city)
 
         $(".gzdd .city_item").click(function () {
             var ccity=$(this).html();

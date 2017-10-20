@@ -144,7 +144,8 @@
                         <div class="right_align" style="width: 120px;float: right"></div>
                     </div>
                     <span class="public_bigbtn bg1aa wrap" id="dy_preserve">保存</span>
-                    <span class="color_main cur margin_l" id="dy_quxiao">取消</span>
+                    <span class="color_main cur margin_l quxiao_ico" id="dy_quxiao">取消</span>
+                <div class="right_icos" >
                     <div class="checkbox ico_rightstatas" style="display: inline-block;margin-left: 60px;">
                         <label>
                             <input type="checkbox" name="like" value="">
@@ -157,6 +158,7 @@
                     </div>
                     <div class="biezhu"> 同时发送到邮箱</div>
                     <span class="cur deletedyq" id="delete_dy">删除订阅器</span>
+                </div>
                 </div>
                 <!--编辑订阅器end-->
                 <!--第一次打开我的订阅-->
@@ -384,23 +386,42 @@
             });
         });
 
-        
-        $(".post_action").click(function () {
+        //简历投递
+        $("body").on("click",".post_action",function () {
             var _this = $(this);
             $.ajax({
                 type:"post",
                 url:"<?php  echo app_url('person/index/post_resume')?>",
                 data:{
-                    data_id:$(this).attr("data-id"),
-                    uid:$(this).parent().attr('data-id')
+                    data_id:_this.attr("data-id"),
+                    uid:_this.parent().attr('data-id')
                 },
                 success:function (data) {
                     var data = JSON.parse(data);
                     if(data.status==1){
-                        _this.parent().html("已投递");
+                        _this.html("已投递");
                     }
                 }
             })
+        })
+        
+        //收藏职位
+        $("body").on("click",".revoke_action",function () {
+           var _this=$(this);
+           $.ajax({
+               type:"post",
+               url:"<?php  echo app_url('person/index/post_resume')?>",
+               data:{
+                   data_id:_this.attr("data-id"),
+                    uid:_this.parent().attr('data-id')
+               },
+                success:function (data) {
+                    var data = JSON.parse(data);
+                    if(data.status==1){
+                        _this.html("已收藏");
+                    }
+                }
+           })
         })
     })
 </script>

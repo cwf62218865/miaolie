@@ -31,6 +31,8 @@
 }
 .collection_action{
     height: 50px;
+    line-height: 50px;
+    text-align: center;
     width: 100%;
     margin-top: 20px;
     border-top: 1px solid #eee;
