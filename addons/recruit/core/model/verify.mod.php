@@ -49,7 +49,10 @@ function send_codes($phone){
     if(!$_SESSION['last_sendtime'])
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> 26932ca576d025b11cf83b7043f298d6abaf0abd
 =======
 >>>>>>> 26932ca576d025b11cf83b7043f298d6abaf0abd
         $_SESSION['phone_code']=mt_rand(1000,9999);
